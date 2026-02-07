@@ -2,6 +2,8 @@
 
 import { useLocaleContext } from "@/context/LocaleContext";
 
+const staggerDelay = (i: number) => ({ animationDelay: `${i * 80}ms` });
+
 export default function Hero() {
   const { t } = useLocaleContext();
 
@@ -10,16 +12,28 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg)]/80 via-transparent to-[var(--bg)] pointer-events-none" />
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16">
         <div className="flex-1 text-center lg:text-left max-w-xl">
-          <p className="font-mono text-sm text-[var(--muted)] uppercase tracking-widest mb-4">
+          <p
+            className="font-mono text-sm text-[var(--muted)] uppercase tracking-widest mb-4 animate-fade-in-up"
+            style={staggerDelay(0)}
+          >
             {t("hero.badge")}
           </p>
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-6">
+          <h1
+            className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-6 animate-fade-in-up"
+            style={staggerDelay(1)}
+          >
             <span className="gradient-text">Nuwwar Saeed</span>
           </h1>
-          <p className="text-xl text-[var(--muted)] max-w-2xl mx-auto lg:mx-0 mb-10">
+          <p
+            className="text-xl text-[var(--muted)] max-w-2xl mx-auto lg:mx-0 mb-10 animate-fade-in-up"
+            style={staggerDelay(2)}
+          >
             {t("hero.tagline")}
           </p>
-          <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+          <div
+            className="flex flex-wrap gap-4 justify-center lg:justify-start animate-fade-in-up"
+            style={staggerDelay(3)}
+          >
             <a
               href="#projects"
               className="inline-flex items-center px-6 py-3 rounded-lg bg-[var(--accent)] text-white font-medium hover:opacity-90 transition-opacity"
@@ -34,7 +48,10 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <div className="flex-shrink-0 w-full max-w-[320px] sm:max-w-[380px] lg:max-w-[420px]">
+        <div
+          className="flex-shrink-0 w-full max-w-[320px] sm:max-w-[380px] lg:max-w-[420px] animate-fade-in-up"
+          style={staggerDelay(2)}
+        >
           <div className="rounded-xl overflow-hidden shadow-2xl ring-1 ring-[var(--border)]">
             <img
               src="/5.jpeg"

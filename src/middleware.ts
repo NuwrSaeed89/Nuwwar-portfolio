@@ -15,12 +15,9 @@ export function middleware(request: NextRequest) {
 
   const segment = pathname.split("/")[1];
 
-  // Root: redirect to locale (prefer Accept-Language for Arabic)
+  // Root: redirect to default locale (English)
   if (!segment || segment === "") {
-    const acceptLang = request.headers.get("accept-language") ?? "";
-    const preferAr = acceptLang.toLowerCase().includes("ar");
-    const locale = preferAr ? "ar" : defaultLocale;
-    return NextResponse.redirect(new URL(`/${locale}`, request.url));
+    return NextResponse.redirect(new URL(`/${defaultLocale}`, request.url));
   }
 
   // Invalid locale: redirect to default

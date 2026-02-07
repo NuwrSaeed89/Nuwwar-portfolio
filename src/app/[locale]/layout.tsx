@@ -44,7 +44,7 @@ export default function LocaleLayout({
       <div
         dir={locale === "ar" ? "rtl" : "ltr"}
         lang={locale}
-        className="min-h-screen"
+        className={`min-h-screen ${locale === "ar" ? "font-arabic" : ""}`}
       >
         {children}
       </div>

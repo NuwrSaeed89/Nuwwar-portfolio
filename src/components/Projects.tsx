@@ -1,9 +1,10 @@
 "use client";
 
 import { useLocaleContext } from "@/context/LocaleContext";
+import { AnimateIn } from "./AnimateIn";
 
 type ProjectItem = {
-  id: "nobofa" | "ehtiraf" | "customTheme" | "wooStore" | "pluginDev";
+  id: "nobofa" | "ehtiraf" | "northafrica" | "rentCarsHouses" | "customTheme" | "wooStore" | "pluginDev";
   tags: string[];
   url?: string;
 } & ({ image?: string; images?: never } | { image?: never; images: string[] });
@@ -22,20 +23,17 @@ const projectList: ProjectItem[] = [
     images: ["/assets/3.png", "/assets/4.png"],
   },
   {
-    id: "customTheme",
-    tags: ["PHP", "WordPress", "Gutenberg"],
+    id: "rentCarsHouses",
+    tags: ["WooCommerce", "WordPress", "PHP"],
     url: undefined,
+    images: ["/assets/6.jpeg"],
   },
   {
-    id: "wooStore",
-    tags: ["WooCommerce", "PHP", "REST API"],
+    id: "northafrica",
+    tags: ["WooCommerce", "WordPress", "PHP", "Blog"],
     url: undefined,
   },
-  {
-    id: "pluginDev",
-    tags: ["Plugin", "WordPress", "MySQL"],
-    url: undefined,
-  },
+
 ];
 
 export default function Projects() {
@@ -43,7 +41,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-24 px-6">
-      <div className="max-w-4xl mx-auto">
+      <AnimateIn className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold mb-12 text-white">{t("projects.title")}</h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projectList.map((project) => {
@@ -121,7 +119,7 @@ export default function Projects() {
         <p className="mt-8 text-center text-[var(--muted)] text-sm">
           {t("projects.more")}
         </p>
-      </div>
+      </AnimateIn>
     </section>
   );
 }

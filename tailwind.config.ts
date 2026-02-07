@@ -11,6 +11,7 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-display)", "system-ui", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],
+        arabic: ["var(--font-tajawal)", "system-ui", "sans-serif"],
       },
       colors: {
         brand: {

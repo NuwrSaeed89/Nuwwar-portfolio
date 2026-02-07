@@ -16,7 +16,7 @@
   },
   "about": {
     "title": "About",
-    "p1": "I'm Nuwwar Saeed, a WordPress developer focused on custom themes, plugins, and maintainable, performant sites. I work with the block editor, classic themes, WooCommerce, and headless setups when it fits the project.",
+    "p1": "I'm Nuwwar Saeed, a WordPress developer focused on custom themes, plugins, and maintainable, performant sites. I work with the block editor, Elementor , Elementor Pro , classic themes, WooCommerce, and headless setups when it fits the project.",
     "p2": "From concept to launch and beyond, I help businesses and teams get the most out of WordPress with clean code, clear documentation, and scalable architecture.",
     "education": "Software Engineer, graduated from Aleppo University."
   },
@@ -29,6 +29,8 @@
       "E‑commerce": "E‑commerce",
       "API": "API",
       "Gutenberg": "Gutenberg",
+      "Page Builder": "Page Builder",
+      "SEO": "SEO",
       "Frontend": "Frontend",
       "Database": "Database"
     },
@@ -37,9 +39,13 @@
       "PHP": "PHP",
       "Custom Themes": "Custom Themes",
       "Plugins": "Plugins",
+      "customCodes": "Custom code",
       "WooCommerce": "WooCommerce",
       "REST API": "REST API",
       "Block Editor": "Block Editor",
+      "Elementor": "Elementor",
+      "Elementor Pro": "Elementor Pro",
+      "seoFriendly": "SEO friendly",
       "htmlCssJs": "HTML / CSS / JS",
       "MySQL": "MySQL"
     }
@@ -63,6 +69,14 @@
       "wooStore": {
         "title": "WooCommerce store",
         "description": "E‑commerce site with custom checkout, product filters, and payment integration."
+      },
+      "northafrica": {
+        "title": "North Africa",
+        "description": "WooCommerce store and blog for building materials and path accessories. (Host expired — no live link.)"
+      },
+      "rentCarsHouses": {
+        "title": "Rent Cars & Houses",
+        "description": "Rental platform for cars and houses with WooCommerce. Browse catalog, view detailed specifications and parameters for each vehicle and property, with search and booking options."
       },
       "pluginDev": {
         "title": "Plugin development",

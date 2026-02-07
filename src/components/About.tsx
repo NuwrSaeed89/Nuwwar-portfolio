@@ -1,13 +1,14 @@
 "use client";
 
 import { useLocaleContext } from "@/context/LocaleContext";
+import { AnimateIn } from "./AnimateIn";
 
 export default function About() {
   const { t } = useLocaleContext();
 
   return (
     <section id="about" className="py-24 px-6">
-      <div className="max-w-3xl mx-auto">
+      <AnimateIn className="max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold mb-6 text-white">{t("about.title")}</h2>
         <p className="text-lg text-[var(--muted)] leading-relaxed mb-6">
           {t("about.p1")}
@@ -19,7 +20,7 @@ export default function About() {
           <span className="w-2 h-2 rounded-full bg-[var(--wp)] shrink-0" aria-hidden />
           {t("about.education")}
         </p>
-      </div>
+      </AnimateIn>
     </section>
   );
 }

@@ -1,13 +1,14 @@
 "use client";
 
 import { useLocaleContext } from "@/context/LocaleContext";
+import { AnimateIn } from "./AnimateIn";
 
 export default function Contact() {
   const { t } = useLocaleContext();
 
   return (
     <section id="contact" className="py-24 px-6 bg-[var(--surface)]/50">
-      <div className="max-w-2xl mx-auto text-center">
+      <AnimateIn className="max-w-2xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6 text-white">{t("contact.title")}</h2>
         <p className="text-[var(--muted)] mb-10">
           {t("contact.intro")}
@@ -52,7 +53,7 @@ export default function Contact() {
             {t("contact.phone")}
           </a>
         </div>
-      </div>
+      </AnimateIn>
     </section>
   );
 }

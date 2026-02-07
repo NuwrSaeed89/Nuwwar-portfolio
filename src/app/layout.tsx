@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, JetBrains_Mono } from "next/font/google";
+import { Outfit, JetBrains_Mono, Tajawal } from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -11,6 +11,13 @@ const outfit = Outfit({
 const jetbrains = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
+  display: "swap",
+});
+
+const tajawal = Tajawal({
+  weight: ["400", "500", "700", "800"],
+  subsets: ["arabic", "latin"],
+  variable: "--font-tajawal",
   display: "swap",
 });
 
@@ -28,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${jetbrains.variable}`}
+      className={`${outfit.variable} ${jetbrains.variable} ${tajawal.variable}`}
     >
       <body className="font-sans antialiased min-h-screen bg-[var(--bg)] text-[var(--text)]">
         {children}
