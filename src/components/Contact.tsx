@@ -36,9 +36,6 @@ export default function Contact() {
             LinkedIn
           </a>
         </div>
-        <p className="mt-8 text-sm text-[var(--muted)]">
-          Replace the email and LinkedIn URL above with your real contact details.
-        </p>
       </div>
     </section>
   );
