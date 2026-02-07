@@ -8,7 +8,7 @@ const defaultOptions: IntersectionObserverInit = {
 };
 
 export function useInView(options: IntersectionObserverInit = {}) {
-  const ref = useRef<HTMLElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
   const [isInView, setIsInView] = useState(false);
   const opts = { ...defaultOptions, ...options };
 
