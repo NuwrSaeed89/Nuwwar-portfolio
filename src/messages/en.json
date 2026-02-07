@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "toggleMenu": "Toggle menu"
+  },
+  "hero": {
+    "badge": "WordPress Developer",
+    "tagline": "Building custom themes, plugins, and scalable WordPress solutions.",
+    "viewWork": "View work",
+    "getInTouch": "Get in touch",
+    "scroll": "Scroll",
+    "scrollAria": "Scroll to about"
+  },
+  "about": {
+    "title": "About",
+    "p1": "I'm Nuwwar Saeed, a WordPress developer focused on custom themes, plugins, and maintainable, performant sites. I work with the block editor, classic themes, WooCommerce, and headless setups when it fits the project.",
+    "p2": "From concept to launch and beyond, I help businesses and teams get the most out of WordPress with clean code, clear documentation, and scalable architecture.",
+    "education": "Software Engineer, graduated from Aleppo University."
+  },
+  "skills": {
+    "title": "Skills & tools",
+    "categories": {
+      "CMS": "CMS",
+      "Backend": "Backend",
+      "Development": "Development",
+      "E‑commerce": "E‑commerce",
+      "API": "API",
+      "Gutenberg": "Gutenberg",
+      "Frontend": "Frontend",
+      "Database": "Database"
+    },
+    "items": {
+      "WordPress": "WordPress",
+      "PHP": "PHP",
+      "Custom Themes": "Custom Themes",
+      "Plugins": "Plugins",
+      "WooCommerce": "WooCommerce",
+      "REST API": "REST API",
+      "Block Editor": "Block Editor",
+      "htmlCssJs": "HTML / CSS / JS",
+      "MySQL": "MySQL"
+    }
+  },
+  "projects": {
+    "title": "Selected work",
+    "more": "More projects and case studies can be added here or linked from an external portfolio.",
+    "items": {
+      "nobofa": {
+        "title": "NOBOFA Store",
+        "description": "Full website for NOBOFA — healthier services provider. Features kitchen (healthy food & drinks), salon & beauty, massage, diet shop, product showroom, and e‑commerce with cart and checkout."
+      },
+      "ehtiraf": {
+        "title": "Ehtiraf Print",
+        "description": "Full website for مطبعة احتراف (Ehtiraf Print) — print shop with services, pricing, client reviews, contact, and blog. Showcases packaging, boxes, bags, labels, stickers, cards, and branding services."
+      },
+      "customTheme": {
+        "title": "Custom WordPress theme",
+        "description": "Responsive theme with custom blocks, options panel, and optimized performance."
+      },
+      "wooStore": {
+        "title": "WooCommerce store",
+        "description": "E‑commerce site with custom checkout, product filters, and payment integration."
+      },
+      "pluginDev": {
+        "title": "Plugin development",
+        "description": "Custom plugin for content workflow, shortcodes, and admin tools."
+      }
+    }
+  },
+  "contact": {
+    "title": "Get in touch",
+    "intro": "Interested in working together or have a WordPress project in mind? Reach out.",
+    "email": "Email me",
+    "phone": "Call me"
+  },
+  "footer": {
+    "copyright": "Nuwwar Saeed. WordPress developer.",
+    "top": "Top",
+    "contact": "Contact"
+  }
+}

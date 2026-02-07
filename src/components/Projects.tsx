@@ -1,104 +1,127 @@
-type Project = {
-  title: string;
-  description: string;
+"use client";
+
+import { useLocaleContext } from "@/context/LocaleContext";
+
+type ProjectItem = {
+  id: "nobofa" | "ehtiraf" | "customTheme" | "wooStore" | "pluginDev";
   tags: string[];
   url?: string;
-  /** Add a screenshot: put image in public/ (e.g. public/ehtiraf-print.jpg) and set image: "/ehtiraf-print.jpg" */
-  image?: string;
-};
+} & ({ image?: string; images?: never } | { image?: never; images: string[] });
 
-const projects: Project[] = [
+const projectList: ProjectItem[] = [
   {
-    title: "Ehtiraf Print",
-    description:
-      "Full website for مطبعة احتراف (Ehtiraf Print) — print shop with services, pricing, client reviews, contact, and blog. Showcases packaging, boxes, bags, labels, stickers, cards, and branding services.",
-    tags: ["WordPress", "PHP", "WooCommerce"],
+    id: "nobofa",
+    tags: ["WordPress", "WooCommerce", "PHP"],
+    url: "https://nobofa.store",
+    images: ["/assets/1.jpeg", "/assets/2.jpeg"],
+  },
+  {
+    id: "ehtiraf",
+    tags: ["WordPress", "PHP", "Photo Gallery"],
     url: "https://ehtiraf-print.com",
+    images: ["/assets/3.png", "/assets/4.png"],
   },
   {
-    title: "Custom WordPress theme",
-    description:
-      "Responsive theme with custom blocks, options panel, and optimized performance.",
+    id: "customTheme",
     tags: ["PHP", "WordPress", "Gutenberg"],
+    url: undefined,
   },
   {
-    title: "WooCommerce store",
-    description:
-      "E‑commerce site with custom checkout, product filters, and payment integration.",
+    id: "wooStore",
     tags: ["WooCommerce", "PHP", "REST API"],
+    url: undefined,
   },
   {
-    title: "Plugin development",
-    description:
-      "Custom plugin for content workflow, shortcodes, and admin tools.",
+    id: "pluginDev",
     tags: ["Plugin", "WordPress", "MySQL"],
+    url: undefined,
   },
 ];
 
 export default function Projects() {
+  const { t } = useLocaleContext();
+
   return (
     <section id="projects" className="py-24 px-6">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-white">Selected work</h2>
+        <h2 className="text-3xl font-bold mb-12 text-white">{t("projects.title")}</h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project) => (
-            <article
-              key={project.title}
-              className="rounded-xl bg-[var(--surface)] border border-[var(--border)] card-hover overflow-hidden"
-            >
-              {project.image ? (
-                <a
-                  href={project.url ?? "#"}
-                  target={project.url ? "_blank" : undefined}
-                  rel={project.url ? "noopener noreferrer" : undefined}
-                  className="block aspect-video bg-[var(--border)]"
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={project.image}
-                    alt=""
-                    className="w-full h-full object-cover"
-                  />
-                </a>
-              ) : null}
-              <div className="p-6">
-                <h3 className="text-lg font-semibold text-white mb-2">
-                  {project.url ? (
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-[var(--accent)] transition-colors"
-                    >
-                      {project.title} →
-                    </a>
-                  ) : (
-                    project.title
-                  )}
-                </h3>
-                <p className="text-[var(--muted)] text-sm leading-relaxed mb-4">
-                  {project.description}
-                </p>
-                <ul className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <li
-                      key={tag}
-                      className="px-2 py-1 text-xs rounded bg-[var(--bg)] text-[var(--muted)] font-mono"
-                    >
-                      {tag}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </article>
-          ))}
+          {projectList.map((project) => {
+            const title = t(`projects.items.${project.id}.title`);
+            const description = t(`projects.items.${project.id}.description`);
+            const images = "images" in project && project.images ? project.images : "image" in project && project.image ? [project.image] : [];
+            return (
+              <article
+                key={project.id}
+                className="rounded-xl bg-[var(--surface)] border border-[var(--border)] card-hover overflow-hidden"
+              >
+                {images.length > 0 ? (
+                  <a
+                    href={project.url ?? "#"}
+                    target={project.url ? "_blank" : undefined}
+                    rel={project.url ? "noopener noreferrer" : undefined}
+                    className="block aspect-video bg-[var(--border)] relative overflow-hidden"
+                  >
+                    {images.length === 1 ? (
+                      /* eslint-disable-next-line @next/next/no-img-element */
+                      <img
+                        src={images[0]}
+                        alt=""
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="flex w-full h-full">
+                        {images.map((src, i) => (
+                          /* eslint-disable-next-line @next/next/no-img-element */
+                          <img
+                            key={src}
+                            src={src}
+                            alt=""
+                            className="w-full h-full object-cover shrink-0"
+                            style={{ minWidth: `${100 / images.length}%` }}
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </a>
+                ) : null}
+                <div className="p-6">
+                  <h3 className="text-lg font-semibold text-white mb-2">
+                    {project.url ? (
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-[var(--accent)] transition-colors"
+                      >
+                        {title} →
+                      </a>
+                    ) : (
+                      title
+                    )}
+                  </h3>
+                  <p className="text-[var(--muted)] text-sm leading-relaxed mb-4">
+                    {description}
+                  </p>
+                  <ul className="flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <li
+                        key={tag}
+                        className="px-2 py-1 text-xs rounded bg-[var(--bg)] text-[var(--muted)] font-mono"
+                      >
+                        {tag}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </article>
+            );
+          })}
         </div>
         <p className="mt-8 text-center text-[var(--muted)] text-sm">
-          More projects and case studies can be added here or linked from an
-          external portfolio.
+          {t("projects.more")}
         </p>
       </div>
     </section>
   );
 }
-                                                                                                                                                                                                  
