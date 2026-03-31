@@ -4,23 +4,40 @@ import { useLocaleContext } from "@/context/LocaleContext";
 import { AnimateIn } from "./AnimateIn";
 
 type ProjectItem = {
-  id: "nobofa" | "ehtiraf" | "northafrica" | "rentCarsHouses" | "customTheme" | "wooStore" | "pluginDev";
+  id:
+ 
+    | "ehtiraf"
+    | "lamssa"
+    | "doctorAssessment"
+    | "rentCarsHouses"
+    | "nobofa"
+    | "northafrica"
+    | "customTheme"
+    | "wooStore"
+    | "pluginDev";
   tags: string[];
   url?: string;
 } & ({ image?: string; images?: never } | { image?: never; images: string[] });
 
 const projectList: ProjectItem[] = [
-  {
-    id: "nobofa",
-    tags: ["WordPress", "WooCommerce", "PHP"],
-    url: "https://nobofa.store",
-    images: ["/assets/1.jpeg", "/assets/2.jpeg"],
-  },
+
   {
     id: "ehtiraf",
     tags: ["WordPress", "PHP", "Photo Gallery"],
     url: "https://ehtiraf-print.com",
     images: ["/assets/3.png", "/assets/4.png"],
+  },
+  {
+    id: "lamssa",
+    tags: ["WooCommerce", "WordPress", "Beauty"],
+    url: "http://localhost:8888/lamssa/",
+    images: ["/assets/8.png"],
+  },
+  {
+    id: "doctorAssessment",
+    tags: ["WordPress", "Elementor", "Assessment"],
+    url: "https://moccasin-cheetah-487091.hostingersite.com/",
+    images: ["/assets/7.png"],
   },
   {
     id: "rentCarsHouses",
@@ -29,8 +46,30 @@ const projectList: ProjectItem[] = [
     images: ["/assets/6.jpeg"],
   },
   {
+    id: "nobofa",
+    tags: ["WordPress", "WooCommerce", "PHP"],
+    url: "https://nobofa.store",
+    images: ["/assets/1.jpeg", "/assets/2.jpeg"],
+  },
+  {
     id: "northafrica",
     tags: ["WooCommerce", "WordPress", "PHP", "Blog"],
+    url: undefined,
+  },
+
+  {
+    id: "customTheme",
+    tags: ["PHP", "WordPress", "Gutenberg"],
+    url: undefined,
+  },
+  {
+    id: "wooStore",
+    tags: ["WooCommerce", "PHP", "REST API"],
+    url: undefined,
+  },
+  {
+    id: "pluginDev",
+    tags: ["Plugin", "WordPress", "MySQL"],
     url: undefined,
   },
 

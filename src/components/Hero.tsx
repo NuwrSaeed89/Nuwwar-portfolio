@@ -1,6 +1,7 @@
 "use client";
 
 import { useLocaleContext } from "@/context/LocaleContext";
+import Image from "next/image";
 
 const staggerDelay = (i: number) => ({ animationDelay: `${i * 80}ms` });
 
@@ -53,10 +54,13 @@ export default function Hero() {
           style={staggerDelay(2)}
         >
           <div className="rounded-xl overflow-hidden shadow-2xl ring-1 ring-[var(--border)]">
-            <img
+            <Image
               src="/5.jpeg"
-              alt=""
+              alt="MacBook"
+              width={900}
+              height={600}
               className="w-full h-auto object-cover"
+              priority
             />
           </div>
         </div>

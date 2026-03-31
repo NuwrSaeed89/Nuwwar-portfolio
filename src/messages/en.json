@@ -62,6 +62,14 @@
         "title": "Ehtiraf Print",
         "description": "Full website for مطبعة احتراف (Ehtiraf Print) — print shop with services, pricing, client reviews, contact, and blog. Showcases packaging, boxes, bags, labels, stickers, cards, and branding services."
       },
+      "lamssa": {
+        "title": "Lamssa Beauty Wholesale",
+        "description": "Landing and catalog experience for Lamssa beauty and makeup products, with WooCommerce and WhatsApp ordering flows."
+      },
+      "doctorAssessment": {
+        "title": "Doctor Website + Assessment",
+        "description": "Doctor website with an interactive assessment tool to help visitors understand their condition context and next steps."
+      },
       "customTheme": {
         "title": "Custom WordPress theme",
         "description": "Responsive theme with custom blocks, options panel, and optimized performance."
@@ -72,7 +80,7 @@
       },
       "northafrica": {
         "title": "North Africa",
-        "description": "WooCommerce store and blog for building materials and path accessories. (Host expired — no live link.)"
+        "description": "WooCommerce store and blog for building materials and bathroom accessories. (Host expired — no live link.)"
       },
       "rentCarsHouses": {
         "title": "Rent Cars & Houses",
