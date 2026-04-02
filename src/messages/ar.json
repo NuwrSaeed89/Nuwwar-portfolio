@@ -1,4 +1,7 @@
 {
+  "site": {
+    "name": "نوار سعيد"
+  },
   "nav": {
     "about": "من أنا",
     "resume": "السيرة",
@@ -20,7 +23,7 @@
   },
   "about": {
     "title": "من أنا",
-    "p1": "أنا نوّار سعيد، مطوّرة Full Stack بخبرة تزيد عن 5 سنوات في تطوير الويب وFlutter وووردبريس.",
+    "p1": "أنا نوار سعيد، مطوّرة Full Stack بخبرة تزيد عن 5 سنوات في تطوير الويب وFlutter وووردبريس.",
     "p2": "أبني مواقع وتطبيقات موبايل قابلة للتوسع باستخدام أدوات حديثة مثل WooCommerce وREST API وFirebase مع منهجية عمل سحابية.",
     "education": "مهندسة برمجيات، خريجة جامعة حلب."
   },
@@ -98,8 +101,9 @@
       "Firebase": "Firebase",
       "State Management": "إدارة الحالة",
       "Responsive UI": "واجهة متجاوبة",
-      "Next.js": "Next.js",
+      "nextJs": "Next.js",
       "Tailwind CSS": "Tailwind CSS",
+      "Laravel": "لارافيل",
       "Oracle ADF": "Oracle ADF",
       "htmlCssJs": "HTML / CSS / JS",
       "MySQL": "MySQL"
@@ -155,7 +159,7 @@
     "behance": "Behance"
   },
   "footer": {
-    "copyright": "نوّار سعيد. مطوّر ووردبريس.",
+    "copyright": "نوار سعيد. مطوّر ووردبريس.",
     "top": "أعلى",
     "contact": "تواصل"
   }

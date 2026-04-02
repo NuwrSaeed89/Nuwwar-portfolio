@@ -21,7 +21,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-[var(--border)] bg-[var(--bg)]/90 backdrop-blur-sm">
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href={`/${locale}`} className="font-semibold text-white">
-          Nuwwar Saeed
+          {t("site.name")}
         </Link>
         <nav className="hidden sm:flex items-center gap-8">
           {linkKeys.map(({ href, key }) => (

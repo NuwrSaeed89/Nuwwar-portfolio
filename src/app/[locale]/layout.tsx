@@ -5,11 +5,11 @@ import { isValidLocale, type Locale } from "@/i18n/config";
 
 const titles: Record<Locale, string> = {
   en: "Nuwwar Saeed | WordPress Developer",
-  ar: "نوّار سعيد | مطوّر ووردبريس",
+  ar: "نوار سعيد | مطوّر ووردبريس",
 };
 const descriptions: Record<Locale, string> = {
   en: "Portfolio of Nuwwar Saeed — WordPress developer specializing in themes, plugins, and custom solutions.",
-  ar: "معرض أعمال نوّار سعيد — مطوّر ووردبريس متخصص في القوالب والإضافات والحلول المخصصة.",
+  ar: "معرض أعمال نوار سعيد — مطوّر ووردبريس متخصص في القوالب والإضافات والحلول المخصصة.",
 };
 
 export function generateStaticParams() {

@@ -10,13 +10,13 @@ type TabKey = "web" | "flutter" | "wordpress";
 const tabSkillMap: Record<TabKey, SkillItem[]> = {
   web: [
     { nameKey: "htmlCssJs", categoryKey: "Frontend" },
-    { nameKey: "Next.js", categoryKey: "Frontend" },
+    { nameKey: "nextJs", categoryKey: "Frontend" },
     { nameKey: "Tailwind CSS", categoryKey: "Frontend" },
     { nameKey: "Oracle ADF", categoryKey: "Development" },
     { nameKey: "PHP", categoryKey: "Backend" },
     { nameKey: "REST API", categoryKey: "API" },
     { nameKey: "MySQL", categoryKey: "Database" },
-    { nameKey: "customCodes", categoryKey: "Development" },
+    { nameKey: "Laravel", categoryKey: "Backend" },
     { nameKey: "seoFriendly", categoryKey: "SEO" },
   ],
   flutter: [

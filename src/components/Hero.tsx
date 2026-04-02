@@ -13,8 +13,9 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg)]/80 via-transparent to-[var(--bg)] pointer-events-none" />
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16">
         <div
-          className={`flex-1 text-center lg:text-left max-w-xl ${textAnim}`}
+          className={`flex-1 text-center lg:text-start max-w-xl ${textAnim}`}
           style={{ animationDelay: "0ms" }}
+          dir={dir}
         >
           <p className="font-mono text-sm text-[var(--muted)] uppercase tracking-widest mb-4">
             {t("hero.badge")}
@@ -31,7 +32,7 @@ export default function Hero() {
             </span>
           </div>
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-6">
-            <span className="gradient-text">Nuwwar Saeed</span>
+            <span className="gradient-text inline-block">{t("site.name")}</span>
           </h1>
           <p className="text-xl text-[var(--muted)] max-w-2xl mx-auto lg:mx-0 mb-10">
             {t("hero.tagline")}

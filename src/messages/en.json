@@ -1,4 +1,7 @@
 {
+  "site": {
+    "name": "Nuwwar Saeed"
+  },
   "nav": {
     "about": "About",
     "resume": "Resume",
@@ -98,8 +101,9 @@
       "Firebase": "Firebase",
       "State Management": "State Management",
       "Responsive UI": "Responsive UI",
-      "Next.js": "Next.js",
+      "nextJs": "Next.js",
       "Tailwind CSS": "Tailwind CSS",
+      "Laravel": "Laravel",
       "Oracle ADF": "Oracle ADF",
       "htmlCssJs": "HTML / CSS / JS",
       "MySQL": "MySQL"
