@@ -3,26 +3,23 @@
 import { useLocaleContext } from "@/context/LocaleContext";
 import Image from "next/image";
 
-const staggerDelay = (i: number) => ({ animationDelay: `${i * 80}ms` });
-
 export default function Hero() {
-  const { t } = useLocaleContext();
+  const { t, dir } = useLocaleContext();
+  const textAnim = dir === "rtl" ? "animate-fade-in-right" : "animate-fade-in-left";
+  const imageAnim = dir === "rtl" ? "animate-fade-in-left" : "animate-fade-in-right";
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-grid">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-grid pt-24 pb-12 sm:pt-28 sm:pb-16 md:pt-32 lg:pt-24 lg:pb-12">
       <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg)]/80 via-transparent to-[var(--bg)] pointer-events-none" />
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16">
-        <div className="flex-1 text-center lg:text-left max-w-xl">
-          <p
-            className="font-mono text-sm text-[var(--muted)] uppercase tracking-widest mb-4 animate-fade-in-up"
-            style={staggerDelay(0)}
-          >
+        <div
+          className={`flex-1 text-center lg:text-left max-w-xl ${textAnim}`}
+          style={{ animationDelay: "0ms" }}
+        >
+          <p className="font-mono text-sm text-[var(--muted)] uppercase tracking-widest mb-4">
             {t("hero.badge")}
           </p>
-          <div
-            className="flex flex-wrap gap-2 justify-center lg:justify-start mb-6 animate-fade-in-up"
-            style={staggerDelay(1)}
-          >
+          <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-6">
             <span className="px-3 py-1 rounded-full border border-[var(--border)] text-xs text-[var(--muted)]">
               {t("hero.roleWeb")}
             </span>
@@ -33,22 +30,13 @@ export default function Hero() {
               {t("hero.roleWordPress")}
             </span>
           </div>
-          <h1
-            className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-6 animate-fade-in-up"
-            style={staggerDelay(2)}
-          >
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-6">
             <span className="gradient-text">Nuwwar Saeed</span>
           </h1>
-          <p
-            className="text-xl text-[var(--muted)] max-w-2xl mx-auto lg:mx-0 mb-10 animate-fade-in-up"
-            style={staggerDelay(3)}
-          >
+          <p className="text-xl text-[var(--muted)] max-w-2xl mx-auto lg:mx-0 mb-10">
             {t("hero.tagline")}
           </p>
-          <div
-            className="flex flex-wrap gap-4 justify-center lg:justify-start animate-fade-in-up"
-            style={staggerDelay(4)}
-          >
+          <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
             <a
               href="#projects"
               className="inline-flex items-center px-6 py-3 rounded-lg bg-[var(--accent)] text-white font-medium hover:opacity-90 transition-opacity"
@@ -64,8 +52,8 @@ export default function Hero() {
           </div>
         </div>
         <div
-          className="flex-shrink-0 w-full max-w-[320px] sm:max-w-[380px] lg:max-w-[420px] animate-fade-in-up"
-          style={staggerDelay(2)}
+          className={`flex-shrink-0 w-full max-w-[320px] sm:max-w-[380px] lg:max-w-[420px] ${imageAnim}`}
+          style={{ animationDelay: "120ms" }}
         >
           <div className="rounded-xl overflow-hidden shadow-2xl ring-1 ring-[var(--border)]">
             <Image
@@ -79,7 +67,10 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+      <div
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in"
+        style={{ animationDelay: "400ms", animationFillMode: "both" }}
+      >
         <a
           href="#about"
           className="flex flex-col items-center gap-2 text-[var(--muted)] hover:text-[var(--accent)] transition-colors"
