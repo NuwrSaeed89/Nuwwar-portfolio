@@ -1,14 +1,18 @@
 {
   "nav": {
     "about": "من أنا",
+    "resume": "السيرة",
     "skills": "المهارات",
     "projects": "المشاريع",
     "contact": "تواصل",
     "toggleMenu": "فتح القائمة"
   },
   "hero": {
-    "badge": "مطوّر ووردبريس",
-    "tagline": "أبني قوالب وإضافات وحلول ووردبريس قابلة للتوسع.",
+    "badge": "مطوّر Full Stack",
+    "roleWeb": "مطوّر ويب",
+    "roleFlutter": "مطوّر Flutter",
+    "roleWordPress": "مطوّر ووردبريس",
+    "tagline": "أبني حلول ويب وموبايل وووردبريس بهندسة قابلة للتوسع.",
     "viewWork": "عرض الأعمال",
     "getInTouch": "تواصل معي",
     "scroll": "تمرير",
@@ -16,12 +20,53 @@
   },
   "about": {
     "title": "من أنا",
-    "p1": "أنا نوّار سعيد، مطوّر ووردبريس متخصص في القوالب والإضافات المخصصة ومواقع قابلة للصيانة والأداء. أعمل مع block editor, Elementor , Elementor Pro , classic themes, WooCommerce عندما تناسب المشروع.",
-    "p2": "من الفكرة إلى الإطلاق وما بعد، أساعد الشركات والفرق في الاستفادة القصوى من ووردبريس عبر كود نظيف ووثائق واضحة وهندسة قابلة للتوسع.",
-    "education": "مهندسة برمجيات، خريج جامعة حلب."
+    "p1": "أنا نوّار سعيد، مطوّرة Full Stack بخبرة تزيد عن 5 سنوات في تطوير الويب وFlutter وووردبريس.",
+    "p2": "أبني مواقع وتطبيقات موبايل قابلة للتوسع باستخدام أدوات حديثة مثل WooCommerce وREST API وFirebase مع منهجية عمل سحابية.",
+    "education": "مهندسة برمجيات، خريجة جامعة حلب."
+  },
+  "resume": {
+    "title": "السيرة الذاتية",
+    "educationTitle": "التعليم",
+    "educationText": "بكالوريوس هندسة البرمجيات (معدل تقريبًا 86)، جامعة حلب — 2007–2012.",
+    "coursesTitle": "الدورات والتدريب",
+    "course1": "أساسيات UI/UX (2024)",
+    "course2": "حوسبة سحابية AWS — معهد CDAC، الهند",
+    "course3": "تقنيات الويب المتقدمة — معهد CDAC، الهند",
+    "course4": "Oracle Application Development Framework (ADF) — دراسة ذاتية",
+    "course5": "Java — دراسة ذاتية",
+    "course6": "PHP وLaravel — دراسة ذاتية",
+    "experienceTitle": "الخبرة المهنية",
+    "exp1": "2024–حتى الآن — مطوّرة Flutter، Iwinto (دبي)",
+    "exp2": "2024–2025 — تصميم UI/UX (عمل حر)",
+    "exp3": "2024 — تطبيقات Flutter، Brother Creative (دبي)",
+    "exp4": "2024 — تطبيقات متاجر (Iwinto / Brother) — منشورة على متاجر التطبيقات",
+    "exp5": "2023–2024 — تجارة إلكترونية Flutter، ma7zan",
+    "exp6": "2020–2024 — مطوّرة IT مستقلة — مشاريع PHP Laravel",
+    "exp7": "2020–2024 — تجارة إلكترونية Flutter، Aurora",
+    "exp8": "2023–2024 — تطوير ويب، مطبعة احتراف",
+    "exp9": "2023 — متجر WooCommerce، Nobofa",
+    "exp10": "2012–2022 — قطاع حكومي IT — قائدة فريق ومطوّرة؛ Java وOracle ADF وPHP Laravel وأنظمة مؤسسية",
+    "languagesTitle": "اللغات",
+    "lang1": "العربية — لغة أم / مستوى متقدم",
+    "lang2": "الإنجليزية — مستوى جيد",
+    "lang3": "الفرنسية — مبتدئ",
+    "cvSkillsTitle": "مهارات تقنية إضافية",
+    "cvSkill1": "Oracle Database وPL/SQL",
+    "cvSkill2": "MySQL وREST APIs وFirebase",
+    "cvSkill3": "Git وGitHub وإدارة الإصدارات",
+    "cvSkill4": "Docker وأساسيات DevOps",
+    "cvSkill5": "WordPress وWooCommerce وتخصيصات",
+    "cvSkill6": "Flutter وDart ونشر تطبيقات الموبايل",
+    "cvSkill7": "Next.js وJavaScript/TypeScript وTailwind CSS",
+    "cvSkill8": "تعاون Agile وقيادة فريق"
   },
   "skills": {
     "title": "المهارات والأدوات",
+    "tabs": {
+      "web": "مطوّر ويب",
+      "flutter": "مطوّر Flutter",
+      "wordpress": "مطوّر ووردبريس"
+    },
     "categories": {
       "CMS": "نظام إدارة محتوى",
       "Backend": "الخادم",
@@ -31,6 +76,8 @@
       "Gutenberg": "جوتنبرغ",
       "Page Builder": "منشئ الصفحات",
       "SEO": "تحسين محركات البحث",
+      "Mobile": "تطبيقات الجوال",
+      "Tools": "أدوات",
       "Frontend": "واجهة المستخدم",
       "Database": "قاعدة البيانات"
     },
@@ -46,6 +93,14 @@
       "Elementor": "Elementor",
       "Elementor Pro": "Elementor Pro",
       "seoFriendly": "صديق لمحركات البحث",
+      "Flutter": "Flutter",
+      "Dart": "Dart",
+      "Firebase": "Firebase",
+      "State Management": "إدارة الحالة",
+      "Responsive UI": "واجهة متجاوبة",
+      "Next.js": "Next.js",
+      "Tailwind CSS": "Tailwind CSS",
+      "Oracle ADF": "Oracle ADF",
       "htmlCssJs": "HTML / CSS / JS",
       "MySQL": "MySQL"
     }
@@ -96,7 +151,8 @@
     "title": "تواصل معي",
     "intro": "مهتم بالتعاون أو لديك مشروع ووردبريس؟ تواصل معي.",
     "email": "راسلني",
-    "phone": "اتصل بي"
+    "phone": "اتصل بي",
+    "behance": "Behance"
   },
   "footer": {
     "copyright": "نوّار سعيد. مطوّر ووردبريس.",

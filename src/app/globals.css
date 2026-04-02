@@ -50,6 +50,27 @@ body {
   box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.4);
 }
 
+/* Subtle page glow following mouse */
+.page-glow-wrapper {
+  position: relative;
+  isolation: isolate;
+}
+.page-glow-wrapper::before {
+  content: "";
+  position: fixed;
+  inset: -200px;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at var(--mouse-x, 50%) var(--mouse-y, 20%),
+      rgba(88, 166, 255, 0.18),
+      transparent 55%
+    );
+  opacity: 0.9;
+  mix-blend-mode: screen;
+  z-index: -1;
+}
+
 /* Professional entrance animations */
 @keyframes fade-in-up {
   from {

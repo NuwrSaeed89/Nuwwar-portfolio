@@ -7,6 +7,7 @@ import LanguageSwitch from "./LanguageSwitch";
 
 const linkKeys = [
   { href: "#about", key: "nav.about" },
+  { href: "#resume", key: "nav.resume" },
   { href: "#skills", key: "nav.skills" },
   { href: "#projects", key: "nav.projects" },
   { href: "#contact", key: "nav.contact" },

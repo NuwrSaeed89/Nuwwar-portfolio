@@ -19,21 +19,35 @@ export default function Hero() {
           >
             {t("hero.badge")}
           </p>
+          <div
+            className="flex flex-wrap gap-2 justify-center lg:justify-start mb-6 animate-fade-in-up"
+            style={staggerDelay(1)}
+          >
+            <span className="px-3 py-1 rounded-full border border-[var(--border)] text-xs text-[var(--muted)]">
+              {t("hero.roleWeb")}
+            </span>
+            <span className="px-3 py-1 rounded-full border border-[var(--border)] text-xs text-[var(--muted)]">
+              {t("hero.roleFlutter")}
+            </span>
+            <span className="px-3 py-1 rounded-full border border-[var(--border)] text-xs text-[var(--muted)]">
+              {t("hero.roleWordPress")}
+            </span>
+          </div>
           <h1
             className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-6 animate-fade-in-up"
-            style={staggerDelay(1)}
+            style={staggerDelay(2)}
           >
             <span className="gradient-text">Nuwwar Saeed</span>
           </h1>
           <p
             className="text-xl text-[var(--muted)] max-w-2xl mx-auto lg:mx-0 mb-10 animate-fade-in-up"
-            style={staggerDelay(2)}
+            style={staggerDelay(3)}
           >
             {t("hero.tagline")}
           </p>
           <div
             className="flex flex-wrap gap-4 justify-center lg:justify-start animate-fade-in-up"
-            style={staggerDelay(3)}
+            style={staggerDelay(4)}
           >
             <a
               href="#projects"

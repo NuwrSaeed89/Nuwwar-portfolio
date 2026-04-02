@@ -15,7 +15,7 @@ export default function Contact() {
         </p>
         <div className="flex flex-wrap justify-center gap-6">
           <a
-            href="mailto:nuwar.m.saeed@gmail.com"
+            href="mailto:Nuwar.m.saeed@gmail.com"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[var(--accent)] text-white font-medium hover:opacity-90 transition-opacity"
           >
             <svg
@@ -34,7 +34,7 @@ export default function Contact() {
             {t("contact.email")}
           </a>
           <a
-            href="tel:+963941141460"
+            href="tel:+963982418701"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-[var(--border)] text-[var(--text)] font-medium hover:bg-[var(--surface)] transition-colors"
           >
             <svg
@@ -51,6 +51,14 @@ export default function Contact() {
               />
             </svg>
             {t("contact.phone")}
+          </a>
+          <a
+            href="https://www.behance.net/nuwwarsaeed"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-[var(--border)] text-[var(--text)] font-medium hover:bg-[var(--surface)] transition-colors"
+          >
+            {t("contact.behance")}
           </a>
         </div>
       </AnimateIn>

@@ -48,7 +48,7 @@ const projectList: ProjectItem[] = [
   {
     id: "nobofa",
     tags: ["WordPress", "WooCommerce", "PHP"],
-    url: "https://nobofa.store",
+    url: undefined,
     images: ["/assets/1.jpeg", "/assets/2.jpeg"],
   },
   {
@@ -83,7 +83,7 @@ export default function Projects() {
       <AnimateIn className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold mb-12 text-white">{t("projects.title")}</h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {projectList.map((project) => {
+          {projectList.map((project, index) => {
             const title = t(`projects.items.${project.id}.title`);
             const description = t(`projects.items.${project.id}.description`);
             const images = "images" in project && project.images ? project.images : "image" in project && project.image ? [project.image] : [];
@@ -123,7 +123,11 @@ export default function Projects() {
                   </a>
                 ) : null}
                 <div className="p-6">
-                  <h3 className="text-lg font-semibold text-white mb-2">
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="inline-flex h-7 px-2 rounded-full border border-[var(--border)] text-xs font-mono text-[var(--muted)] bg-[var(--bg)]/60">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                  <h3 className="text-lg font-semibold text-white">
                     {project.url ? (
                       <a
                         href={project.url}
@@ -137,6 +141,7 @@ export default function Projects() {
                       title
                     )}
                   </h3>
+                  </div>
                   <p className="text-[var(--muted)] text-sm leading-relaxed mb-4">
                     {description}
                   </p>
