@@ -2,6 +2,7 @@
 
 import { useLocaleContext } from "@/context/LocaleContext";
 import { AnimateIn } from "./AnimateIn";
+import { CvDownloadButtons } from "./CvDownload";
 
 const COURSE_KEYS = [
   "course1",
@@ -44,7 +45,13 @@ export default function Resume() {
   return (
     <section id="resume" className="py-24 px-6 border-t border-[var(--border)]">
       <AnimateIn className="max-w-3xl mx-auto space-y-12">
-        <h2 className="text-3xl font-bold text-white">{t("resume.title")}</h2>
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-6 border-b border-[var(--border)] pb-8">
+          <h2 className="text-3xl font-bold text-white">{t("resume.title")}</h2>
+          <div className="flex flex-col items-stretch sm:items-end gap-2">
+            <p className="text-sm text-[var(--muted)] sm:text-end">{t("cvPdf.downloadHint")}</p>
+            <CvDownloadButtons compact className="justify-start sm:justify-end" />
+          </div>
+        </div>
 
         <div>
           <h3 className="text-xl font-semibold text-white mb-3">{t("resume.educationTitle")}</h3>

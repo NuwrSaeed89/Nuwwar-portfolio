@@ -151,6 +151,19 @@
       }
     }
   },
+  "cvPdf": {
+    "documentSubject": "السيرة الذاتية",
+    "summaryTitle": "نبذة مهنية",
+    "emailLabel": "البريد",
+    "phoneLabel": "الهاتف",
+    "behanceLabel": "Behance",
+    "portfolioLabel": "معرض الأعمال",
+    "downloadTitle": "تحميل السيرة الذاتية (PDF)",
+    "downloadEnglish": "الإنجليزية",
+    "downloadArabic": "العربية",
+    "downloadHint": "اختر لغة ملف PDF.",
+    "buttonShort": "تحميل السيرة"
+  },
   "contact": {
     "title": "تواصل معي",
     "intro": "مهتم بالتعاون أو لديك مشروع ووردبريس؟ تواصل معي.",
@@ -159,7 +172,7 @@
     "behance": "Behance"
   },
   "footer": {
-    "copyright": "نوار سعيد. مطوّر ووردبريس.",
+    "copyright": "نوار سعيد. مطوّر Full Stack.",
     "top": "أعلى",
     "contact": "تواصل"
   }

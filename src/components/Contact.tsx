@@ -2,6 +2,7 @@
 
 import { useLocaleContext } from "@/context/LocaleContext";
 import { AnimateIn } from "./AnimateIn";
+import CvDownload from "./CvDownload";
 
 export default function Contact() {
   const { t } = useLocaleContext();
@@ -61,6 +62,7 @@ export default function Contact() {
             {t("contact.behance")}
           </a>
         </div>
+        <CvDownload />
       </AnimateIn>
     </section>
   );

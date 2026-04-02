@@ -10,6 +10,7 @@ const linkKeys = [
   { href: "#resume", key: "nav.resume" },
   { href: "#skills", key: "nav.skills" },
   { href: "#projects", key: "nav.projects" },
+  { href: "#cv-download", key: "cvPdf.buttonShort" },
   { href: "#contact", key: "nav.contact" },
 ] as const;
 

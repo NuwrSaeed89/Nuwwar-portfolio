@@ -151,6 +151,19 @@
       }
     }
   },
+  "cvPdf": {
+    "documentSubject": "Curriculum Vitae",
+    "summaryTitle": "Professional summary",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "behanceLabel": "Behance",
+    "portfolioLabel": "Portfolio",
+    "downloadTitle": "Download CV (PDF)",
+    "downloadEnglish": "English",
+    "downloadArabic": "Arabic",
+    "downloadHint": "Choose language for the PDF file.",
+    "buttonShort": "Download CV"
+  },
   "contact": {
     "title": "Get in touch",
     "intro": "Interested in working together or have a WordPress project in mind? Reach out.",
@@ -159,7 +172,7 @@
     "behance": "Behance"
   },
   "footer": {
-    "copyright": "Nuwwar Saeed. WordPress developer.",
+    "copyright": "Nuwwar Saeed. FullStack developer.",
     "top": "Top",
     "contact": "Contact"
   }
