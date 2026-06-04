@@ -24,7 +24,7 @@
   "about": {
     "title": "من أنا",
     "p1": "أنا نوار سعيد، مطوّرة Full Stack بخبرة تزيد عن 5 سنوات في تطوير الويب وFlutter وووردبريس.",
-    "p2": "أبني مواقع وتطبيقات موبايل قابلة للتوسع باستخدام أدوات حديثة مثل WooCommerce وREST API وFirebase مع منهجية عمل سحابية.",
+    "p2": "أبني حلول Backend وFull Stack — C# وASP.NET Core وREST APIs وتكاملات خارجية وWooCommerce/تجارة إلكترونية وCI/CD سحابي.",
     "education": "مهندسة برمجيات، خريجة جامعة حلب."
   },
   "resume": {
@@ -38,6 +38,7 @@
     "course4": "Oracle Application Development Framework (ADF) — دراسة ذاتية",
     "course5": "Java — دراسة ذاتية",
     "course6": "PHP وLaravel — دراسة ذاتية",
+    "course7": "C# وASP.NET Core — REST APIs والمصادقة والتكاملات (دراسة ذاتية ومشاريع)",
     "experienceTitle": "الخبرة المهنية",
     "exp1": "2025حتى الآن — مطوّرة Flutter، Iwinto (دبي)",
     "exp2": "2025 — تصميم UI/UX (عمل حر)",
@@ -49,20 +50,22 @@
     "exp8": "2022— مطوّرة IT مستقلة — مشاريع PHP Laravel",
     "exp9": "2022 — تجارة إلكترونية Flutter، Aurora",
    
-    "exp10": "2012–2022 — قطاع حكومي IT — قائدة فريق ومطوّرة؛ Java وOracle ADF وPHP Laravel وأنظمة مؤسسية",
+    "exp10": "2012–2022 — قطاع حكومي IT — قائدة فريق ومطوّرة؛ C# وASP.NET وJava وOracle ADF وPHP Laravel وREST APIs وأنظمة مؤسسية",
     "languagesTitle": "اللغات",
     "lang1": "العربية — لغة أم / مستوى متقدم",
     "lang2": "الإنجليزية — مستوى جيد",
     "lang3": "الفرنسية — مبتدئ",
     "cvSkillsTitle": "مهارات تقنية إضافية",
-    "cvSkill1": "Oracle Database وPL/SQL",
-    "cvSkill2": "MySQL وREST APIs وFirebase",
-    "cvSkill3": "Git وGitHub وإدارة الإصدارات",
-    "cvSkill4": "Docker وأساسيات DevOps",
+    "cvSkill1": "C# وASP.NET Core — Web APIs وخدمات وتكاملات",
+    "cvSkill2": "تصميم REST API وتكاملات خارجية وأساسيات أمان Backend",
+    "cvSkill3": "MySQL وهندسة Backend قابلة للتوسع وOracle Database وPL/SQL",
+    "cvSkill4": "Git وGitHub وخطوط CI/CD  وأساسيات DevOps",
     "cvSkill5": "WordPress وWooCommerce وتخصيصات",
     "cvSkill6": "Flutter وDart ونشر تطبيقات الموبايل",
     "cvSkill7": "Next.js وJavaScript/TypeScript وTailwind CSS",
-    "cvSkill8": "تعاون Agile وقيادة فريق"
+    "cvSkill8": "تعاون Agile وقيادة فريق وتسليم مناسب لبيئة Startup",
+    "cvSkill9": "تجارة إلكترونية وWooCommerce — سلة ودفع وتكاملات دفع",
+    "cvSkill10": "أساسيات AWS سحابي وFirebase وBackend لتطبيقات Flutter"
   },
   "skills": {
     "title": "المهارات والأدوات",
@@ -105,6 +108,8 @@
       "nextJs": "Next.js",
       "Tailwind CSS": "Tailwind CSS",
       "Laravel": "لارافيل",
+      "csharp": "C#",
+      "aspNetCore": "ASP.NET Core",
       "Oracle ADF": "Oracle ADF",
       "htmlCssJs": "HTML / CSS / JS",
       "MySQL": "MySQL"
@@ -114,6 +119,14 @@
     "title": "أعمال مختارة",
     "more": "يمكن إضافة المزيد من المشاريع ودراسات الحالة هنا أو ربطها من portfolio خارجي.",
     "items": {
+      "socialSpark": {
+        "title": "Social Spark",
+        "description": "موقع وكالة إبداعية (عربي/إنجليزي) بإطار ASP.NET — صفحة هبوط احترافية، عرض القطاعات، حجز استشارات، وتجربة ثنائية اللغة."
+      },
+      "indoOud": {
+        "title": "IndoOud — دهن العود الطبيعي",
+        "description": "متجر إلكتروني فاخر للعود والبخور ودهن العود الطبيعي (عربي/إنجليزي) بـ ASP.NET وPostgreSQL — فئات، متغيرات للمنتجات، سلة، قائمة الأمنيات، وأسعار بالريال. تجربة متجر داكنة أنيقة لعطور الجاهرو الإندونيسية."
+      },
       "nobofa": {
         "title": "متجر NOBOFA",
         "description": "موقع كامل لـ NOBOFA — مزود خدمات أكثر صحة. يشمل المطبخ (أطعمة ومشروبات صحية)، الصالون والتجميل، التدليك، متجر الحميات، عرض المنتجات، والتجارة الإلكترونية مع السلة والدفع."

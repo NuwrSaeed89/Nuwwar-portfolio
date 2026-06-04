@@ -19,56 +19,107 @@ export default function Header() {
   const { locale, t } = useLocaleContext();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-[var(--border)] bg-[var(--bg)]/90 backdrop-blur-sm">
-      <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href={`/${locale}`} className="font-semibold text-white">
-          {t("site.name")}
-        </Link>
-        <nav className="hidden sm:flex items-center gap-8">
-          {linkKeys.map(({ href, key }) => (
-            <a
-              key={href}
-              href={href}
-              className="text-sm text-[var(--muted)] hover:text-[var(--accent)] transition-colors"
-            >
-              {t(key)}
-            </a>
-          ))}
-          <LanguageSwitch />
-        </nav>
-        <button
-          type="button"
-          className="sm:hidden p-2 text-[var(--muted)] hover:text-white"
-          onClick={() => setOpen(!open)}
-          aria-expanded={open}
-          aria-label={t("nav.toggleMenu")}
+    <header className="fixed top-0 left-0 right-0 z-50 px-3 sm:px-4 pt-3 sm:pt-4 pointer-events-none">
+      <div className="max-w-5xl mx-auto pointer-events-auto">
+        <div
+          className={`rounded-2xl border border-[var(--border)] bg-[var(--surface)] shadow-lg shadow-black/30 transition-[border-radius] duration-300 ${
+            open ? "rounded-2xl" : "rounded-2xl sm:rounded-full"
+          }`}
         >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            {open ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
-        </button>
-      </div>
-      {open && (
-        <nav className="sm:hidden border-t border-[var(--border)] px-6 py-4 flex flex-col gap-4">
-          {linkKeys.map(({ href, key }) => (
-            <a
-              key={href}
-              href={href}
-              className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"
-              onClick={() => setOpen(false)}
+          <div className="flex items-center justify-between gap-3 px-4 sm:px-5 py-2.5 sm:py-3">
+            <Link
+              href={`/${locale}`}
+              className="font-semibold text-white shrink-0 text-sm sm:text-base hover:text-[var(--accent)] transition-colors"
             >
-              {t(key)}
-            </a>
-          ))}
-          <div className="pt-2">
-            <LanguageSwitch />
+              {t("site.name")}
+            </Link>
+            <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
+              {linkKeys.map(({ href, key }) => (
+                <a
+                  key={href}
+                  href={href}
+                  className="px-2.5 xl:px-3 py-1.5 text-sm text-[var(--muted)] hover:text-[var(--accent)] rounded-full hover:bg-[var(--bg)]/50 transition-colors whitespace-nowrap"
+                >
+                  {t(key)}
+                </a>
+              ))}
+              <div className="ms-1 ps-1 border-s border-[var(--border)]">
+                <LanguageSwitch />
+              </div>
+            </nav>
+            <div className="hidden sm:flex lg:hidden items-center gap-2">
+              <LanguageSwitch />
+              <button
+                type="button"
+                className="p-2 rounded-full text-[var(--muted)] hover:text-white hover:bg-[var(--bg)]/50 transition-colors"
+                onClick={() => setOpen(!open)}
+                aria-expanded={open}
+                aria-label={t("nav.toggleMenu")}
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  {open ? (
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  ) : (
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  )}
+                </svg>
+              </button>
+            </div>
+            <button
+              type="button"
+              className="sm:hidden p-2 rounded-full text-[var(--muted)] hover:text-white hover:bg-[var(--bg)]/50 transition-colors"
+              onClick={() => setOpen(!open)}
+              aria-expanded={open}
+              aria-label={t("nav.toggleMenu")}
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {open ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
           </div>
-        </nav>
-      )}
+          {open && (
+            <nav className="lg:hidden border-t border-[var(--border)] px-4 py-4 flex flex-col gap-1">
+              {linkKeys.map(({ href, key }) => (
+                <a
+                  key={href}
+                  href={href}
+                  className="px-3 py-2.5 text-[var(--muted)] hover:text-[var(--accent)] hover:bg-[var(--bg)]/40 rounded-xl transition-colors"
+                  onClick={() => setOpen(false)}
+                >
+                  {t(key)}
+                </a>
+              ))}
+              <div className="pt-3 px-1 sm:hidden">
+                <LanguageSwitch />
+              </div>
+            </nav>
+          )}
+        </div>
+      </div>
     </header>
   );
 }

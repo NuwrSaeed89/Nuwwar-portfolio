@@ -11,6 +11,7 @@ const COURSE_KEYS = [
   "course4",
   "course5",
   "course6",
+  "course7",
 ] as const;
 
 const EXPERIENCE_KEYS = [
@@ -37,6 +38,8 @@ const CV_SKILL_KEYS = [
   "cvSkill6",
   "cvSkill7",
   "cvSkill8",
+  "cvSkill9",
+  "cvSkill10",
 ] as const;
 
 export default function Resume() {

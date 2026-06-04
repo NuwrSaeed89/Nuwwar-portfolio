@@ -13,10 +13,12 @@ const tabSkillMap: Record<TabKey, SkillItem[]> = {
     { nameKey: "nextJs", categoryKey: "Frontend" },
     { nameKey: "Tailwind CSS", categoryKey: "Frontend" },
     { nameKey: "Oracle ADF", categoryKey: "Development" },
+    { nameKey: "csharp", categoryKey: "Backend" },
+    { nameKey: "aspNetCore", categoryKey: "Backend" },
     { nameKey: "PHP", categoryKey: "Backend" },
+    { nameKey: "Laravel", categoryKey: "Backend" },
     { nameKey: "REST API", categoryKey: "API" },
     { nameKey: "MySQL", categoryKey: "Database" },
-    { nameKey: "Laravel", categoryKey: "Backend" },
     { nameKey: "seoFriendly", categoryKey: "SEO" },
   ],
   flutter: [

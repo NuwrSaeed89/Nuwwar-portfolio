@@ -24,7 +24,7 @@
   "about": {
     "title": "About",
     "p1": "I'm Nuwwar Saeed, a Full Stack Developer with 5+ years of experience in Web, Flutter, and WordPress development.",
-    "p2": "I build scalable websites and mobile apps using modern tools, including WooCommerce, REST APIs, Firebase, and cloud-focused workflows.",
+    "p2": "I build scalable backend and full-stack solutions — C#, ASP.NET Core, REST APIs, third-party integrations, WooCommerce/e‑commerce, and CI/CD-ready cloud workflows.",
     "education": "Software Engineer, graduated from Aleppo University."
   },
   "resume": {
@@ -38,6 +38,7 @@
     "course4": "Oracle Application Development Framework (ADF) — self-study",
     "course5": "Java — self-study",
     "course6": "PHP & Laravel — self-study",
+    "course7": "C# & ASP.NET Core — REST APIs, authentication, integrations (self-study & projects)",
     "experienceTitle": "Professional experience",
     "exp1": "2025–present — Flutter Developer, Iwinto (Dubai)",
     "exp2": "2024— UI/UX design (freelance)",
@@ -49,20 +50,22 @@
     "exp8": "2022 — Freelance IT developer — PHP Laravel projects",
     "exp9": "2022 — Flutter e‑commerce, Aurora",
  
-    "exp10": "2012–2022 — Government IT sector — team lead & developer; Java, Oracle ADF, PHP Laravel, enterprise systems",
+    "exp10": "2012–2022 — Government IT sector — team lead & developer; C#, ASP.NET, Java, Oracle ADF, PHP Laravel, REST APIs, enterprise systems",
     "languagesTitle": "Languages",
     "lang1": "Arabic — Native / expert",
     "lang2": "English — Experienced",
     "lang3": "French — Beginner",
     "cvSkillsTitle": "Additional technical skills",
-    "cvSkill1": "Oracle Database & PL/SQL",
-    "cvSkill2": "MySQL, REST APIs, Firebase",
-    "cvSkill3": "Git, GitHub, version control",
-    "cvSkill4": "Docker & DevOps basics",
+    "cvSkill1": "C# & ASP.NET Core — Web APIs, services, integrations",
+    "cvSkill2": "REST API design, third-party integrations, authentication & backend security basics",
+    "cvSkill3": "MySQL, scalable backend architecture, Oracle Database & PL/SQL",
+    "cvSkill4": "Git, GitHub, CI/CD pipelines & DevOps basics",
     "cvSkill5": "WordPress, WooCommerce, customizations",
     "cvSkill6": "Flutter & Dart, mobile deployment",
     "cvSkill7": "Next.js, JavaScript/TypeScript, Tailwind CSS",
-    "cvSkill8": "Agile collaboration, team leadership"
+    "cvSkill8": "Agile collaboration, team leadership, startup-ready delivery",
+    "cvSkill9": "E‑commerce & WooCommerce — carts, checkout, payment integrations",
+    "cvSkill10": "AWS cloud basics, Firebase, mobile backends (Flutter)"
   },
   "skills": {
     "title": "Skills & tools",
@@ -105,6 +108,8 @@
       "nextJs": "Next.js",
       "Tailwind CSS": "Tailwind CSS",
       "Laravel": "Laravel",
+      "csharp": "C#",
+      "aspNetCore": "ASP.NET Core",
       "Oracle ADF": "Oracle ADF",
       "htmlCssJs": "HTML / CSS / JS",
       "MySQL": "MySQL"
@@ -114,6 +119,14 @@
     "title": "Selected work",
     "more": "More projects and case studies can be added here or linked from an external portfolio.",
     "items": {
+      "socialSpark": {
+        "title": "Social Spark",
+        "description": "Creative agency website (Arabic/English) built with ASP.NET — premium landing page, sector showcases, consultation booking, and bilingual UX. Live at socialsparkcompany.com."
+      },
+      "indoOud": {
+        "title": "IndoOud — Gaharu Aroma",
+        "description": "Luxury oud & agarwood e-commerce (Arabic/English) built with ASP.NET and PostgreSQL — categories for bakhoor, natural oud oils, gifts & accessories, product variations, cart, wishlist, and SAR pricing. Premium dark-store UX for Indonesian gaharu perfumes."
+      },
       "nobofa": {
         "title": "NOBOFA Store",
         "description": "Full website for NOBOFA — healthier services provider. Features kitchen (healthy food & drinks), salon & beauty, massage, diet shop, product showroom, and e‑commerce with cart and checkout."

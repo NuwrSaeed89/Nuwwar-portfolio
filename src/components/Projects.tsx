@@ -5,7 +5,8 @@ import { AnimateIn } from "./AnimateIn";
 
 type ProjectItem = {
   id:
- 
+    | "socialSpark"
+    | "indoOud"
     | "ehtiraf"
     | "lamssa"
     | "doctorAssessment"
@@ -20,12 +21,23 @@ type ProjectItem = {
 } & ({ image?: string; images?: never } | { image?: never; images: string[] });
 
 const projectList: ProjectItem[] = [
-
+  {
+    id: "socialSpark",
+    tags: ["ASP.NET Core", "C#", "REST API"],
+    url: "https://socialsparkcompany.com/",
+    images: ["/assets/3.png"],
+  },
+  {
+    id: "indoOud",
+    tags: ["ASP.NET Core", "PostgreSQL", "E‑commerce"],
+    url: "https://www.indooud.com/",
+    images: ["/assets/indo.png"],
+  },
   {
     id: "ehtiraf",
     tags: ["WordPress", "PHP", "Photo Gallery"],
     url: "https://ehtiraf-print.com",
-    images: ["/assets/3.png", "/assets/4.png"],
+    images: ["/assets/4.png"],
   },
   {
     id: "lamssa",
@@ -57,21 +69,7 @@ const projectList: ProjectItem[] = [
     url: undefined,
   },
 
-  {
-    id: "customTheme",
-    tags: ["PHP", "WordPress", "Gutenberg"],
-    url: undefined,
-  },
-  {
-    id: "wooStore",
-    tags: ["WooCommerce", "PHP", "REST API"],
-    url: undefined,
-  },
-  {
-    id: "pluginDev",
-    tags: ["Plugin", "WordPress", "MySQL"],
-    url: undefined,
-  },
+ 
 
 ];
 
@@ -103,7 +101,7 @@ export default function Projects() {
                       /* eslint-disable-next-line @next/next/no-img-element */
                       <img
                         src={images[0]}
-                        alt=""
+                        alt={title}
                         className="w-full h-full object-cover"
                       />
                     ) : (

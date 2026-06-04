@@ -21,9 +21,13 @@ body {
   color: var(--text);
 }
 
-/* Fixed header: anchor links & section headings stay visible below navbar */
+/* Floating navbar: anchor links stay visible below header */
 main section[id] {
-  scroll-margin-top: 5.5rem;
+  scroll-margin-top: 6.5rem;
+}
+
+#cv-download {
+  scroll-margin-top: 6.5rem;
 }
 
 @layer utilities {

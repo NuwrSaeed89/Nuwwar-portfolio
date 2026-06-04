@@ -4,12 +4,12 @@ import { LocaleProvider } from "@/context/LocaleContext";
 import { isValidLocale, type Locale } from "@/i18n/config";
 
 const titles: Record<Locale, string> = {
-  en: "Nuwwar Saeed | WordPress Developer",
-  ar: "نوار سعيد | مطوّر ووردبريس",
+  en: "Nuwwar Saeed | Full Stack Developer",
+  ar: "نوار سعيد | مطوّر Full Stack",
 };
 const descriptions: Record<Locale, string> = {
-  en: "Portfolio of Nuwwar Saeed — WordPress developer specializing in themes, plugins, and custom solutions.",
-  ar: "معرض أعمال نوار سعيد — مطوّر ووردبريس متخصص في القوالب والإضافات والحلول المخصصة.",
+  en: "Portfolio of Nuwwar Saeed — Full Stack developer building web, mobile, and WordPress solutions.",
+  ar: "معرض أعمال نوار سعيد — مطوّر Full Stack للويب وFlutter وووردبريس والحلول المخصصة.",
 };
 
 export function generateStaticParams() {
@@ -23,9 +23,22 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const locale = params.locale as Locale;
   if (!isValidLocale(locale)) return {};
+  const title = titles[locale];
+  const description = descriptions[locale];
   return {
-    title: titles[locale],
-    description: descriptions[locale],
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      url: `https://nuwwar-portfolio.vercel.app/${locale}`,
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description,
+    },
   };
 }
 

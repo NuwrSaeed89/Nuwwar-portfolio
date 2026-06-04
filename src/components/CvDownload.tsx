@@ -45,7 +45,7 @@ export default function CvDownload() {
   return (
     <div
       id="cv-download"
-      className="mt-10 pt-10 border-t border-[var(--border)] scroll-mt-28"
+      className="mt-10 pt-10 border-t border-[var(--border)]"
     >
       <h3 className="text-lg font-semibold text-white mb-2">{t("cvPdf.downloadTitle")}</h3>
       <p className="text-sm text-[var(--muted)] mb-5">{t("cvPdf.downloadHint")}</p>

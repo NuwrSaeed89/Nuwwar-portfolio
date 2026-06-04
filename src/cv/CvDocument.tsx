@@ -132,7 +132,15 @@ export function CvDocument({ lang }: { lang: CvLang }) {
     r.exp9,
     r.exp10,
   ];
-  const courseItems = [r.course1, r.course2, r.course3, r.course4, r.course5, r.course6];
+  const courseItems = [
+    r.course1,
+    r.course2,
+    r.course3,
+    r.course4,
+    r.course5,
+    r.course6,
+    r.course7,
+  ];
   const langItems = [r.lang1, r.lang2, r.lang3];
   const skillItems = [
     r.cvSkill1,
@@ -143,6 +151,8 @@ export function CvDocument({ lang }: { lang: CvLang }) {
     r.cvSkill6,
     r.cvSkill7,
     r.cvSkill8,
+    r.cvSkill9,
+    r.cvSkill10,
   ];
 
   return (
