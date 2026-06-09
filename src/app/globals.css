@@ -3,13 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --bg: #0f1419;
-  --surface: #1a2332;
-  --border: #2d3a4d;
-  --text: #e6edf3;
-  --muted: #8b949e;
-  --accent: #58a6ff;
-  --wp: #21759b;
+  --bg: #0a0e14;
+  --surface: #121a24;
+  --surface-elevated: #182230;
+  --border: #2a3544;
+  --border-bright: #3d4f66;
+  --text: #eef4fb;
+  --muted: #8b9cb0;
+  --accent: #5eb3ff;
+  --accent-soft: rgba(94, 179, 255, 0.14);
+  --accent-glow: rgba(94, 179, 255, 0.35);
+  --wp: #3b9fd4;
+  --violet: #a78bfa;
+  --emerald: #34d399;
 }
 
 html {
@@ -56,7 +62,159 @@ main section[id] {
 }
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 24px 48px -20px rgba(0, 0, 0, 0.55);
+  border-color: var(--border-bright);
+}
+
+/* Layout */
+.section-shell {
+  @apply max-w-6xl mx-auto px-5 sm:px-6;
+}
+
+.section-block {
+  @apply relative py-20 sm:py-28 overflow-hidden;
+}
+
+.section-block-alt {
+  background:
+    radial-gradient(ellipse 80% 50% at 10% 0%, rgba(94, 179, 255, 0.08), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 90% 100%, rgba(167, 139, 250, 0.06), transparent 50%),
+    linear-gradient(180deg, rgba(18, 26, 36, 0.65) 0%, transparent 100%);
+}
+
+.section-label {
+  @apply inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-[var(--accent)];
+}
+.section-label::before {
+  content: "";
+  width: 1.5rem;
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+
+.glass-card {
+  @apply rounded-2xl border backdrop-blur-md;
+  border-color: var(--border);
+  background: color-mix(in srgb, var(--surface) 82%, transparent);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 16px 40px -24px rgba(0, 0, 0, 0.65);
+}
+
+.glass-card-hover {
+  @apply glass-card card-hover;
+}
+
+.bento-grid {
+  @apply grid gap-4 sm:gap-5;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .bento-main {
+    grid-row: span 2;
+  }
+}
+
+.stat-pill {
+  @apply glass-card flex flex-col gap-1 p-5 sm:p-6;
+  background: linear-gradient(145deg, rgba(94, 179, 255, 0.08), rgba(18, 26, 36, 0.9));
+}
+
+.stat-value {
+  @apply text-3xl sm:text-4xl font-bold text-white tracking-tight;
+}
+
+.stat-label {
+  @apply text-sm text-[var(--muted)];
+}
+
+/* Timeline */
+.experience-timeline {
+  @apply relative flex flex-col gap-6;
+}
+.experience-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0.75rem;
+  bottom: 0.75rem;
+  inset-inline-start: 0.4rem;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent), rgba(94, 179, 255, 0.1));
+  border-radius: 999px;
+}
+.experience-item {
+  @apply relative ps-8 sm:ps-10;
+}
+.experience-item::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.55rem;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 999px;
+  background: var(--bg);
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 12px var(--accent-glow);
+}
+
+.skill-category-card {
+  @apply glass-card p-5 sm:p-6 h-full;
+  background: linear-gradient(160deg, rgba(94, 179, 255, 0.05) 0%, rgba(18, 26, 36, 0.95) 45%);
+}
+
+.skill-category-card:nth-child(3n + 2) {
+  background: linear-gradient(160deg, rgba(167, 139, 250, 0.06) 0%, rgba(18, 26, 36, 0.95) 45%);
+}
+.skill-category-card:nth-child(3n) {
+  background: linear-gradient(160deg, rgba(52, 211, 153, 0.05) 0%, rgba(18, 26, 36, 0.95) 45%);
+}
+
+.bullet-list li {
+  @apply relative ps-5 text-[var(--muted)] leading-relaxed;
+}
+.bullet-list li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--accent);
+  opacity: 0.85;
+}
+
+.chip-tag {
+  @apply inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium border;
+  border-color: var(--border);
+  color: var(--muted);
+  background: color-mix(in srgb, var(--bg) 60%, transparent);
+}
+
+.contact-card {
+  @apply glass-card-hover flex flex-col items-center gap-4 p-6 sm:p-8 text-center min-w-[10rem] flex-1;
+}
+
+.tab-pill {
+  @apply px-4 py-2.5 rounded-full border text-sm font-medium transition-all duration-200;
+}
+.tab-pill-active {
+  @apply bg-[var(--accent)] text-white border-[var(--accent)] shadow-lg;
+  box-shadow: 0 8px 24px -8px var(--accent-glow);
+}
+.tab-pill-inactive {
+  color: var(--muted);
+  border-color: var(--border);
+  background: color-mix(in srgb, var(--surface) 82%, transparent);
+}
+.tab-pill-inactive:hover {
+  color: var(--text);
+  border-color: var(--border-bright);
 }
 
 /* Subtle page glow following mouse */

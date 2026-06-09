@@ -2,6 +2,7 @@
 
 import { useLocaleContext } from "@/context/LocaleContext";
 import { AnimateIn } from "./AnimateIn";
+import { SectionHeading } from "./SectionHeading";
 
 type ProjectItem = {
   id:
@@ -77,10 +78,14 @@ export default function Projects() {
   const { t } = useLocaleContext();
 
   return (
-    <section id="projects" className="py-24 px-6">
-      <AnimateIn className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-white">{t("projects.title")}</h2>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <section id="projects" className="section-block border-t border-[var(--border)]/60">
+      <AnimateIn className="section-shell">
+        <SectionHeading
+          label={t("projects.sectionLabel")}
+          title={t("projects.title")}
+          subtitle={t("projects.subtitle")}
+        />
+        <div className="grid gap-5 sm:gap-6 md:grid-cols-2 xl:grid-cols-3">
           {projectList.map((project, index) => {
             const title = t(`projects.items.${project.id}.title`);
             const description = t(`projects.items.${project.id}.description`);
@@ -88,7 +93,7 @@ export default function Projects() {
             return (
               <article
                 key={project.id}
-                className="rounded-xl bg-[var(--surface)] border border-[var(--border)] card-hover overflow-hidden"
+                className="glass-card-hover overflow-hidden group"
               >
                 {images.length > 0 ? (
                   <a
@@ -102,7 +107,7 @@ export default function Projects() {
                       <img
                         src={images[0]}
                         alt={title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     ) : (
                       <div className="flex w-full h-full">

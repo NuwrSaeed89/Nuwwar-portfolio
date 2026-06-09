@@ -17,17 +17,18 @@ export default function Hero() {
           style={{ animationDelay: "0ms" }}
           dir={dir}
         >
-          <p className="font-mono text-sm text-[var(--muted)] uppercase tracking-widest mb-4">
+          <p className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[var(--accent)]/30 bg-[var(--accent-soft)] font-mono text-xs text-[var(--accent)] uppercase tracking-widest mb-5">
+            <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse" aria-hidden />
             {t("hero.badge")}
           </p>
           <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-6">
-            <span className="px-3 py-1 rounded-full border border-[var(--border)] text-xs text-[var(--muted)]">
+            <span className="chip-tag">
               {t("hero.roleWeb")}
             </span>
-            <span className="px-3 py-1 rounded-full border border-[var(--border)] text-xs text-[var(--muted)]">
+            <span className="chip-tag">
               {t("hero.roleFlutter")}
             </span>
-            <span className="px-3 py-1 rounded-full border border-[var(--border)] text-xs text-[var(--muted)]">
+            <span className="chip-tag">
               {t("hero.roleWordPress")}
             </span>
           </div>
@@ -70,13 +71,13 @@ export default function Hero() {
           className={`flex-shrink-0 w-full max-w-[320px] sm:max-w-[380px] lg:max-w-[420px] ${imageAnim}`}
           style={{ animationDelay: "120ms" }}
         >
-          <div className="rounded-xl overflow-hidden shadow-2xl ring-1 ring-[var(--border)]">
+          <div className="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-[var(--border-bright)] glass-card p-1">
             <Image
               src="/5.jpeg"
               alt="MacBook"
               width={900}
               height={600}
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover rounded-xl"
               priority
             />
           </div>

@@ -22,9 +22,9 @@ const tajawal = Tajawal({
 });
 
 export const metadata: Metadata = {
-  title: "Nuwwar Saeed | Full Stack Developer",
+  title: "Nuwwar Saeed | Senior Full Stack Developer",
   description:
-    "Portfolio of Nuwwar Saeed — Full Stack developer building web, mobile, and WordPress solutions.",
+    "Portfolio of Nuwwar Saeed — Senior Full Stack developer with 10+ years building web, mobile, and WordPress solutions.",
 };
 
 export default function RootLayout({

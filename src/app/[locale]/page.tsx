@@ -9,6 +9,7 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { CvTailoringProvider } from "@/context/CvTailoringContext";
 
 export default function LocaleHome() {
   const [coords, setCoords] = useState({ x: "50%", y: "20%" });
@@ -25,22 +26,24 @@ export default function LocaleHome() {
   };
 
   return (
-    <div
-      className="relative min-h-screen overflow-hidden page-glow-wrapper"
-      onMouseMove={handleMouseMove}
-      style={{ "--mouse-x": coords.x, "--mouse-y": coords.y } as React.CSSProperties}
-    >
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Resume />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <CvTailoringProvider>
+      <div
+        className="relative min-h-screen overflow-hidden page-glow-wrapper"
+        onMouseMove={handleMouseMove}
+        style={{ "--mouse-x": coords.x, "--mouse-y": coords.y } as React.CSSProperties}
+      >
+        <Header />
+        <main>
+          <Hero />
+          <About />
+          <Resume />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </CvTailoringProvider>
   );
 }
 

@@ -4,12 +4,12 @@ import { LocaleProvider } from "@/context/LocaleContext";
 import { isValidLocale, type Locale } from "@/i18n/config";
 
 const titles: Record<Locale, string> = {
-  en: "Nuwwar Saeed | Full Stack Developer",
-  ar: "نوار سعيد | مطوّر Full Stack",
+  en: "Nuwwar Saeed | Senior Full Stack Developer",
+  ar: "نوار سعيد | مطوّرة Full Stack أولى",
 };
 const descriptions: Record<Locale, string> = {
-  en: "Portfolio of Nuwwar Saeed — Full Stack developer building web, mobile, and WordPress solutions.",
-  ar: "معرض أعمال نوار سعيد — مطوّر Full Stack للويب وFlutter وووردبريس والحلول المخصصة.",
+  en: "Portfolio of Nuwwar Saeed — Senior Full Stack developer with 10+ years building web, mobile, and WordPress solutions.",
+  ar: "معرض أعمال نوار سعيد — مطوّرة Full Stack أولى بخبرة أكثر من 10 سنوات في الويب وFlutter وووردبريس.",
 };
 
 export function generateStaticParams() {

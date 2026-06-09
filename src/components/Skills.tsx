@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useLocaleContext } from "@/context/LocaleContext";
 import { AnimateIn } from "./AnimateIn";
+import { SectionHeading } from "./SectionHeading";
 
 type SkillItem = { nameKey: string; categoryKey: string };
 type TabKey = "web" | "flutter" | "wordpress";
@@ -17,14 +18,24 @@ const tabSkillMap: Record<TabKey, SkillItem[]> = {
     { nameKey: "aspNetCore", categoryKey: "Backend" },
     { nameKey: "PHP", categoryKey: "Backend" },
     { nameKey: "Laravel", categoryKey: "Backend" },
+    { nameKey: "Java", categoryKey: "Backend" },
     { nameKey: "REST API", categoryKey: "API" },
+    { nameKey: "PostgreSQL", categoryKey: "Database" },
     { nameKey: "MySQL", categoryKey: "Database" },
+    { nameKey: "javascript", categoryKey: "Frontend" },
+    { nameKey: "typescript", categoryKey: "Frontend" },
+    { nameKey: "Docker", categoryKey: "Tools" },
+    { nameKey: "Git", categoryKey: "Tools" },
+    { nameKey: "GitHub", categoryKey: "Tools" },
+    { nameKey: "cicd", categoryKey: "Tools" },
     { nameKey: "seoFriendly", categoryKey: "SEO" },
   ],
   flutter: [
     { nameKey: "Flutter", categoryKey: "Mobile" },
     { nameKey: "Dart", categoryKey: "Mobile" },
     { nameKey: "Firebase", categoryKey: "Tools" },
+    { nameKey: "bloc", categoryKey: "Development" },
+    { nameKey: "getx", categoryKey: "Development" },
     { nameKey: "State Management", categoryKey: "Development" },
     { nameKey: "Responsive UI", categoryKey: "Frontend" },
     { nameKey: "REST API", categoryKey: "API" },
@@ -46,43 +57,51 @@ export default function Skills() {
   const skillKeys = tabSkillMap[activeTab];
 
   return (
-    <section id="skills" className="py-16 px-4 sm:py-24 sm:px-6 bg-[var(--surface)]/50">
-      <AnimateIn className="max-w-4xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-white">
-          {t("skills.title")}
-        </h2>
-        <div className="flex flex-wrap gap-2 mb-6 sm:mb-8">
+    <section id="skills" className="section-block">
+      <AnimateIn className="section-shell">
+        <SectionHeading
+          label={t("skills.sectionLabel")}
+          title={t("skills.title")}
+          subtitle={t("skills.subtitle")}
+        />
+
+        <div className="flex flex-wrap gap-2 mb-8 p-1.5 rounded-full border border-[var(--border)] bg-[var(--surface)]/60 w-fit max-w-full">
           {(["web", "flutter", "wordpress"] as TabKey[]).map((tab) => (
             <button
               key={tab}
               type="button"
               onClick={() => setActiveTab(tab)}
-              className={`px-4 py-2 rounded-lg border text-sm transition-colors ${
-                activeTab === tab
-                  ? "bg-[var(--accent)] text-white border-[var(--accent)]"
-                  : "bg-[var(--surface)] text-[var(--muted)] border-[var(--border)] hover:text-[var(--text)]"
+              className={`tab-pill ${
+                activeTab === tab ? "tab-pill-active" : "tab-pill-inactive"
               }`}
             >
               {t(`skills.tabs.${tab}`)}
             </button>
           ))}
         </div>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
+
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
           {skillKeys.map(({ nameKey, categoryKey }) => (
             <li
               key={nameKey}
-              className="flex flex-wrap items-center gap-2 sm:gap-3 px-4 py-3.5 sm:py-3 rounded-lg bg-[var(--surface)] border border-[var(--border)] card-hover min-w-0"
+              className="glass-card-hover flex items-center gap-3 px-4 py-4 min-w-0"
             >
               <span
-                className="w-2 h-2 rounded-full bg-[var(--wp)] shrink-0"
+                className="w-2.5 h-2.5 rounded-full shrink-0"
+                style={{
+                  background: "linear-gradient(135deg, var(--accent), var(--violet))",
+                  boxShadow: "0 0 10px var(--accent-glow)",
+                }}
                 aria-hidden
               />
-              <span className="text-sm sm:text-base text-[var(--text)] min-w-0 break-words">
-                {t(`skills.items.${nameKey}`)}
-              </span>
-              <span className="text-xs text-[var(--muted)] ml-auto shrink-0">
-                {t(`skills.categories.${categoryKey}`)}
-              </span>
+              <div className="min-w-0 flex-1">
+                <span className="block text-sm sm:text-base text-[var(--text)] break-words">
+                  {t(`skills.items.${nameKey}`)}
+                </span>
+                <span className="block text-xs text-[var(--muted)] mt-0.5">
+                  {t(`skills.categories.${categoryKey}`)}
+                </span>
+              </div>
             </li>
           ))}
         </ul>

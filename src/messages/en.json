@@ -11,27 +11,49 @@
     "toggleMenu": "Toggle menu"
   },
   "hero": {
-    "badge": "Full Stack Developer",
-    "roleWeb": "Web Developer",
-    "roleFlutter": "Flutter Developer",
-    "roleWordPress": "WordPress Developer",
-    "tagline": "Building web, mobile, and WordPress solutions with scalable architecture.",
+    "badge": "Senior Full Stack Developer",
+    "roleWeb": "Senior Web Developer",
+    "roleFlutter": "Senior Flutter Developer",
+    "roleWordPress": "Senior WordPress Developer",
+    "tagline": "10+ years building web, mobile, and WordPress solutions with scalable architecture.",
     "viewWork": "View work",
     "getInTouch": "Get in touch",
     "scroll": "Scroll",
     "scrollAria": "Scroll to about"
   },
   "about": {
+    "sectionLabel": "Profile",
+    "subtitle": "Senior engineer shipping production systems across web, mobile, and enterprise.",
     "title": "About",
-    "p1": "I'm Nuwwar Saeed, a Full Stack Developer with 5+ years of experience in Web, Flutter, and WordPress development.",
-    "p2": "I build scalable backend and full-stack solutions — C#, ASP.NET Core, REST APIs, third-party integrations, WooCommerce/e‑commerce, and CI/CD-ready cloud workflows.",
-    "education": "Software Engineer, graduated from Aleppo University."
+    "p1": "Nuwwar Saeed is a Senior Full Stack Developer and Software Engineer with 10+ years of experience building web applications, mobile apps, and enterprise backend systems.",
+    "p2": "Primary languages — C#, PHP, and Dart — across ASP.NET Core, Laravel, and Flutter with BLoC and GetX state management. Experienced with REST API design, PostgreSQL, MySQL, WordPress/WooCommerce, third-party API integrations, authentication, scalable architecture, Docker, Git, and CI/CD pipelines.",
+    "p3": "Senior-level delivery across production e-commerce platforms, bilingual agency websites, and government enterprise systems. Team lead background with Agile delivery and startup-ready execution.",
+    "primaryLanguagesTitle": "Primary languages",
+    "primaryLanguages": "C#, PHP, Dart",
+    "education": "Bachelor of Computer Engineering (Grade: 86% / Excellent), Aleppo University | 2007 – 2012",
+    "educationTitle": "Education",
+    "stats": {
+      "years": "10+",
+      "yearsLabel": "Years experience",
+      "level": "Senior",
+      "levelLabel": "Developer level",
+      "focus": "Full Stack",
+      "focusLabel": "Core focus"
+    }
   },
   "resume": {
+    "sectionLabel": "Career",
+    "subtitle": "Experience, skills, and credentials ",
     "title": "Resume",
     "educationTitle": "Education",
-    "educationText": "Bachelor of Software Engineering (grade ~86), Aleppo University — 2007–2012.",
-    "coursesTitle": "Courses & training",
+    "educationText": "Bachelor of Computer Engineering (Grade: 86% / Excellent), Aleppo University | 2007 – 2012",
+    "technicalSkillsTitle": "Technical Skills",
+    "projectsTitle": "Key Projects",
+    "proj1": "IndoOud (indooud.com) - Deployed an ASP.NET Core e-commerce engine handling sub-200ms catalog queries with fully integrated secure checkout.",
+    "proj2": "Social Spark (socialsparkcompany.com) - ASP.NET bilingual creative agency website with consultation booking and sector showcases",
+    "proj3": "Nobofa, Ehtiraf Print, WooCommerce stores - WordPress/PHP e-commerce with custom checkout and REST API integrations",
+    "experienceTitle": "Work Experience",
+    "coursesTitle": "Certifications & Training",
     "course1": "UI/UX fundamentals (2024)",
     "course2": "AWS cloud computing — CDAC Institute, India",
     "course3": "Advanced web technologies — CDAC Institute, India",
@@ -39,35 +61,107 @@
     "course5": "Java — self-study",
     "course6": "PHP & Laravel — self-study",
     "course7": "C# & ASP.NET Core — REST APIs, authentication, integrations (self-study & projects)",
-    "experienceTitle": "Professional experience",
-    "exp1": "2025–present — Flutter Developer, Iwinto (Dubai)",
-    "exp2": "2024— UI/UX design (freelance)",
-    "exp3": "2024 — Flutter apps, Brother Creative (Dubai)",
-    "exp4": "2024 — Mobile store apps (Iwinto / Brother) — published on app stores",
-    "exp5": "2023 — Flutter e‑commerce, ma7zan",
-    "exp6": "2023 — Web development, Ehtiraf Print",
-    "exp7": "2023 — WooCommerce store, Nobofa",
-    "exp8": "2022 — Freelance IT developer — PHP Laravel projects",
-    "exp9": "2022 — Flutter e‑commerce, Aurora",
- 
-    "exp10": "2012–2022 — Government IT sector — team lead & developer; C#, ASP.NET, Java, Oracle ADF, PHP Laravel, REST APIs, enterprise systems",
+    "experiences": [
+      {
+        "role": "Flutter Developer | Iwinto, Dubai (2025 – 2026)",
+        "bullets": [
+          "Designed and deployed cross-platform mobile storefronts using Flutter, Dart, and BLoC, ensuring clean separation of concerns, reactive state management, and native-level performance across iOS and Android.",
+          "Collaborated within an Agile team to implement CI/CD cloud workflows, accelerating deployment cycles by 15%.",
+          "Integrated REST APIs and Firebase backend services, supporting real-time data sync for 3+ production mobile applications."
+        ]
+      },
+      {
+        "role": "UI/UX Designer (Freelance) | Independent Clients (2024 – 2025)",
+        "bullets": [
+          "Designed responsive web and mobile interfaces for 5+ client products, improving user task completion rates by 20%.",
+          "Created wireframes and high-fidelity prototypes, reducing design-to-development handoff time by 30%.",
+          "Refined bilingual AR/EN user flows through iterative usability testing across 4 product releases."
+        ]
+      },
+      {
+        "role": "Flutter Developer | Brother Creative, Saudi Arabia (2024)",
+        "bullets": [
+          "Developed and published 2+ Flutter applications to Apple App Store and Google Play for commercial retail clients.",
+          "Architected feature modules with BLoC and GetX for predictable state flow and maintainable, team-scalable Flutter codebases.",
+          "Shipped production releases within 6-week Agile sprint cycles alongside cross-functional design teams."
+        ]
+      },
+      {
+        "role": "Flutter Developer (Freelance) | ma7zan (2023 – 2024)",
+        "bullets": [
+          "Developed a scalable cross-platform e-commerce and logistics delivery application using Flutter and Dart, optimizing core user journeys across 500+ daily active sessions.",
+          "Architected enterprise state management by implementing BLoC for complex, predictable business logic and GetX for rapid, lightweight routing and state utilities.",
+          "Integrated MENA's premier BNPL payment systems, implementing the Tamara Flutter SDK and Tabi REST APIs to deliver secure, multi-installment checkout options.",
+          "Built a programmatic affiliate marketing tracking module, automating real-time commission calculations and custom promotional banner lifecycles.",
+          "Optimized app-to-backend data payloads for delivery tracking, ensuring reliable BLoC-driven state sync and under 200ms API query response times during peak sales periods."
+        ]
+      },
+      {
+        "role": "Web Developer | Ehtiraf Print (2023 – 2024)",
+        "bullets": [
+          "Built a full WordPress/PHP website with gallery, services catalog, and contact workflows serving 1,000+ monthly visitors.",
+          "Customized themes and plugins to streamline print service quoting, reducing client inquiry response time by 40%.",
+          "Deployed SEO-optimized bilingual content pages, increasing organic search visibility by 35%."
+        ]
+      },
+      {
+        "role": "WordPress Developer | Nobofa Store (2023)",
+        "bullets": [
+          "Launched a WooCommerce store with cart, checkout, and product catalog supporting 200+ SKUs across health and wellness categories.",
+          "Integrated secure payment gateways and custom checkout flows, achieving a 12% increase in completed transactions.",
+          "Configured performance caching and image optimization, improving page load speed by 2.5 seconds on mobile."
+        ]
+      },
+      {
+        "role": "Freelance Full Stack Developer | Independent Clients (2020 – 2022)",
+        "bullets": [
+          "Delivered 8+ PHP Laravel backend projects with REST APIs and MySQL databases for small business and e-commerce clients.",
+          "Designed normalized database schemas and API endpoints handling 10,000+ records with sub-200ms query response times.",
+          "Managed end-to-end project delivery from requirements gathering through deployment for 3 concurrent client engagements."
+        ]
+      },
+      {
+        "role": "Flutter Developer | Aurora E-commerce (2020 – 2022)",
+        "bullets": [
+          "Built a mobile commerce application with scalable UI architecture and REST API layer serving 1,500+ registered users.",
+          "Implemented BLoC and GetX state management with offline caching, reducing app crash rates by 18% across Android devices.",
+          "Used Jira under team lead direction to organize sprints, track tasks, and manage feature delivery across the development roadmap.",
+          "Collaborated on payment and inventory API integrations supporting real-time stock updates for 300+ products."
+        ]
+      },
+      {
+        "role": "IT Team Lead & Senior Full Stack Developer | Government IT Sector (2012 – 2022)",
+        "bullets": [
+          "Fast-tracked through 4 progressive roles from Graduate Trainee to Team Lead, initially selected due to graduating with an elite academic score (86% grade in Computer Engineering).",
+          "Promoted to IT Team Planner & Leader, managing end-to-end project lifecycles, sprint architectures, and delivering highly scalable enterprise workflows.",
+          "Architected 10+ full-stack web solutions using C# and PHP Laravel, reducing manual processing times by 40% across state-level departments.",
+          "Designed and optimized high-concurrency relational databases, leveraging Oracle Database, PL/SQL, and MySQL to handle massive state-level datasets.",
+          "Engineered secure REST APIs and third-party integrations using Java and Oracle ADF, optimizing back-end authentication and system communication.",
+          "Acted as Lead Instructor and Mentor, training junior IT team elements on software engineering best practices, advanced clean-code architectures, and Git version control."
+        ]
+      }
+    ],
     "languagesTitle": "Languages",
-    "lang1": "Arabic — Native / expert",
-    "lang2": "English — Experienced",
-    "lang3": "French — Beginner",
-    "cvSkillsTitle": "Additional technical skills",
-    "cvSkill1": "C# & ASP.NET Core — Web APIs, services, integrations",
-    "cvSkill2": "REST API design, third-party integrations, authentication & backend security basics",
-    "cvSkill3": "MySQL, scalable backend architecture, Oracle Database & PL/SQL",
-    "cvSkill4": "Git, GitHub, CI/CD pipelines & DevOps basics",
-    "cvSkill5": "WordPress, WooCommerce, customizations",
-    "cvSkill6": "Flutter & Dart, mobile deployment",
-    "cvSkill7": "Next.js, JavaScript/TypeScript, Tailwind CSS",
-    "cvSkill8": "Agile collaboration, team leadership, startup-ready delivery",
-    "cvSkill9": "E‑commerce & WooCommerce — carts, checkout, payment integrations",
-    "cvSkill10": "AWS cloud basics, Firebase, mobile backends (Flutter)"
+    "lang1": "Arabic — Native or Bilingual Proficiency",
+    "lang2": "English — Professional Working Proficiency",
+    "lang3": "French — Elementary Proficiency",
+    "cvSkillsTitle": "Technical Skills",
+    "cvSkill1": "Backend: C#, ASP.NET Core, ASP.NET Web API, REST API, Laravel, PHP",
+    "cvSkill2": "Databases: PostgreSQL, MySQL, Oracle Database, PL/SQL, SQL query optimization",
+    "cvSkill3": "Frontend: JavaScript, TypeScript, Next.js, React, HTML5, CSS3, Tailwind CSS",
+    "cvSkill4": "Mobile: Flutter, Dart, BLoC Architecture, GetX, Firebase, REST API, App Store Deployment",
+    "cvSkill5": "CMS and E-commerce: WordPress, WooCommerce, custom themes, plugins, payment integration",
+    "cvSkill6": "DevOps and Tools: Git, GitHub, Docker, CI/CD pipelines, AWS cloud basics",
+    "cvSkill7": "Integrations: Tabi API, Tamara SDK, BNPL Gateways, Affiliate Marketing Modules, Third-party APIs",
+    "cvSkill8": "Enterprise: Oracle ADF, Java, scalable architecture, government systems",
+    "cvSkill9": "Methods: Agile, Scrum, team leadership, problem solving, independent delivery",
+    "cvSkill10": "Security: Backend security awareness, secure authentication patterns",
+    "cvSkill11": "Cloud: AWS fundamentals, Firebase, cloud-hosted deployments",
+    "cvSkill12": "Design: UI/UX fundamentals, responsive and bilingual interfaces"
   },
   "skills": {
+    "sectionLabel": "Stack",
+    "subtitle": "Technologies grouped by focus area — tap a category to explore.",
     "title": "Skills & tools",
     "tabs": {
       "web": "Web Developer",
@@ -104,6 +198,8 @@
       "Dart": "Dart",
       "Firebase": "Firebase",
       "State Management": "State Management",
+      "bloc": "BLoC",
+      "getx": "GetX",
       "Responsive UI": "Responsive UI",
       "nextJs": "Next.js",
       "Tailwind CSS": "Tailwind CSS",
@@ -112,12 +208,22 @@
       "aspNetCore": "ASP.NET Core",
       "Oracle ADF": "Oracle ADF",
       "htmlCssJs": "HTML / CSS / JS",
-      "MySQL": "MySQL"
+      "MySQL": "MySQL",
+      "PostgreSQL": "PostgreSQL",
+      "Docker": "Docker",
+      "Git": "Git",
+      "GitHub": "GitHub",
+      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "cicd": "CI/CD",
+      "Java": "Java"
     }
   },
   "projects": {
+    "sectionLabel": "Portfolio",
+    "subtitle": "Selected builds across e-commerce, agencies, and custom platforms.",
     "title": "Selected work",
-    "more": "More projects and case studies can be added here or linked from an external portfolio.",
+    "more": " ",
     "items": {
       "socialSpark": {
         "title": "Social Spark",
@@ -167,7 +273,8 @@
   },
   "cvPdf": {
     "documentSubject": "Curriculum Vitae",
-    "summaryTitle": "Professional summary",
+    "summaryTitle": "Professional Summary",
+    "locationLabel": "Location: Syria (Remote / Open to relocation)",
     "emailLabel": "Email",
     "phoneLabel": "Phone",
     "behanceLabel": "Behance",
@@ -175,10 +282,18 @@
     "downloadTitle": "Download CV (PDF)",
     "downloadEnglish": "English",
     "downloadArabic": "Arabic",
-    "downloadHint": "Choose language for the PDF file.",
-    "buttonShort": "Download CV"
+    "downloadHint": "Downloads a searchable digital PDF with embedded text — choose language.",
+    "buttonShort": "Download CV",
+    "tailorLabel": "Tailor CV to a job description (optional)",
+    "tailorHint": "Paste the job post below. The PDF headline and skill order will mirror the target role and keyword sequence for stronger ATS alignment.",
+    "tailorPlaceholder": "Senior Backend Engineer\n\nRequired: PostgreSQL, MySQL, C#, ASP.NET Core, REST APIs...",
+    "tailorPreviewTitle": "Tailored headline preview",
+    "tailorError": "Could not generate tailored CV. Please try again.",
+    "downloading": "Generating..."
   },
   "contact": {
+    "sectionLabel": "Connect",
+    "subtitle": "Open to senior full stack, Flutter, and WordPress opportunities.",
     "title": "Get in touch",
     "intro": "Interested in working together or have a WordPress project in mind? Reach out.",
     "email": "Email me",
@@ -186,7 +301,7 @@
     "behance": "Behance"
   },
   "footer": {
-    "copyright": "Nuwwar Saeed. FullStack developer.",
+    "copyright": "Nuwwar Saeed. Senior Full Stack Developer.",
     "top": "Top",
     "contact": "Contact"
   }

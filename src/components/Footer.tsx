@@ -8,8 +8,8 @@ export default function Footer() {
   const { locale, t } = useLocaleContext();
 
   return (
-    <footer className="py-8 px-6 border-t border-[var(--border)]">
-      <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+    <footer className="py-10 px-6 border-t border-[var(--border)]/60 bg-[var(--surface)]/40">
+      <div className="section-shell flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-[var(--muted)]">
           © {year} {t("footer.copyright")}
         </p>

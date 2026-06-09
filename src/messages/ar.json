@@ -11,27 +11,49 @@
     "toggleMenu": "فتح القائمة"
   },
   "hero": {
-    "badge": "مطوّر Full Stack",
-    "roleWeb": "مطوّر ويب",
-    "roleFlutter": "مطوّر Flutter",
-    "roleWordPress": "مطوّر ووردبريس",
-    "tagline": "أبني حلول ويب وموبايل وووردبريس بهندسة قابلة للتوسع.",
+    "badge": "مطوّرة Full Stack أولى",
+    "roleWeb": "مطوّرة ويب أولى",
+    "roleFlutter": "مطوّرة Flutter أولى",
+    "roleWordPress": "مطوّرة ووردبريس أولى",
+    "tagline": "أكثر من 10 سنوات في بناء حلول ويب وموبايل وووردبريس بهندسة قابلة للتوسع.",
     "viewWork": "عرض الأعمال",
     "getInTouch": "تواصل معي",
     "scroll": "تمرير",
     "scrollAria": "التمرير إلى من أنا"
   },
   "about": {
+    "sectionLabel": "الملف الشخصي",
+    "subtitle": "مهندسة أولى تُسلّم أنظمة إنتاجية عبر الويب والموبايل والمؤسسات.",
     "title": "من أنا",
-    "p1": "أنا نوار سعيد، مطوّرة Full Stack بخبرة تزيد عن 5 سنوات في تطوير الويب وFlutter وووردبريس.",
-    "p2": "أبني حلول Backend وFull Stack — C# وASP.NET Core وREST APIs وتكاملات خارجية وWooCommerce/تجارة إلكترونية وCI/CD سحابي.",
-    "education": "مهندسة برمجيات، خريجة جامعة حلب."
+    "p1": "نوار سعيد، مطوّرة Full Stack أولى ومهندسة برمجيات بخبرة تزيد عن 10 سنوات في تطبيقات الويب والموبايل وأنظمة Backend المؤسسية.",
+    "p2": "اللغات الأساسية — C# وPHP وDart — عبر ASP.NET Core وLaravel وFlutter مع إدارة الحالة عبر BLoC وGetX. خبرة في تصميم REST API وPostgreSQL وMySQL وWordPress/WooCommerce، مع تكاملات API خارجية ومصادقة وهندسة قابلة للتوسع وDocker وGit وخطوط CI/CD.",
+    "p3": "تسليم على مستوى Senior في منصات تجارة إلكترونية، مواقع وكالات ثنائية اللغة، وأنظمة حكومية مؤسسية. خلفية قيادة فريق وتسليم Agile مناسب لبيئات Startup.",
+    "primaryLanguagesTitle": "اللغات الأساسية",
+    "primaryLanguages": "C#، PHP، Dart",
+    "education": "بكالوريوس هندسة الحاسوب (المعدل: 86% / ممتاز)، جامعة حلب | 2007 – 2012",
+    "educationTitle": "التعليم",
+    "stats": {
+      "years": "10+",
+      "yearsLabel": "سنوات خبرة",
+      "level": "Senior",
+      "levelLabel": "المستوى المهني",
+      "focus": "Full Stack",
+      "focusLabel": "التخصص الأساسي"
+    }
   },
   "resume": {
+    "sectionLabel": "المسار المهني",
+    "subtitle": "الخبرة والمهارات والشهادات .",
     "title": "السيرة الذاتية",
     "educationTitle": "التعليم",
-    "educationText": "بكالوريوس هندسة البرمجيات (معدل تقريبًا 86)، جامعة حلب — 2007–2012.",
-    "coursesTitle": "الدورات والتدريب",
+    "educationText": "بكالوريوس هندسة الحاسوب (المعدل: 86% / ممتاز)، جامعة حلب | 2007 – 2012",
+    "technicalSkillsTitle": "المهارات التقنية",
+    "projectsTitle": "مشاريع رئيسية",
+    "proj1": "IndoOud (indooud.com) - أطلقت محرك تجارة إلكترونية ASP.NET Core يتعامل مع استعلامات كتالوج أقل من 200ms مع دفع آمن متكامل بالكامل.",
+    "proj2": "Social Spark (socialsparkcompany.com) - موقع وكالة ASP.NET ثنائي اللغة مع حجز استشارات",
+    "proj3": "Nobofa، احتراف، متاجر WooCommerce - WordPress/PHP مع دفع وتكاملات REST API",
+    "experienceTitle": "الخبرة العملية",
+    "coursesTitle": "الشهادات والتدريب",
     "course1": "أساسيات UI/UX (2024)",
     "course2": "حوسبة سحابية AWS — معهد CDAC، الهند",
     "course3": "تقنيات الويب المتقدمة — معهد CDAC، الهند",
@@ -39,35 +61,107 @@
     "course5": "Java — دراسة ذاتية",
     "course6": "PHP وLaravel — دراسة ذاتية",
     "course7": "C# وASP.NET Core — REST APIs والمصادقة والتكاملات (دراسة ذاتية ومشاريع)",
-    "experienceTitle": "الخبرة المهنية",
-    "exp1": "2025حتى الآن — مطوّرة Flutter، Iwinto (دبي)",
-    "exp2": "2025 — تصميم UI/UX (عمل حر)",
-    "exp3": "2024 — تطبيقات Flutter، Brother Creative (دبي)",
-    "exp4": "2024 — تطبيقات متاجر (Iwinto / Brother) — منشورة على متاجر التطبيقات",
-    "exp5": "2023 — تجارة إلكترونية Flutter، ma7zan",
-    "exp6": "2023— تطوير ويب، مطبعة احتراف",
-    "exp7": "2023 — متجر WooCommerce، Nobofa",
-    "exp8": "2022— مطوّرة IT مستقلة — مشاريع PHP Laravel",
-    "exp9": "2022 — تجارة إلكترونية Flutter، Aurora",
-   
-    "exp10": "2012–2022 — قطاع حكومي IT — قائدة فريق ومطوّرة؛ C# وASP.NET وJava وOracle ADF وPHP Laravel وREST APIs وأنظمة مؤسسية",
+    "experiences": [
+      {
+        "role": "مطوّرة Flutter | Iwinto، دبي (2025 – 2026)",
+        "bullets": [
+          "صممت ونشرت متاجر موبايل متعددة المنصات باستخدام Flutter وDart وBLoC، مع فصل واضح للمسؤوليات وإدارة حالة تفاعلية وأداء قريب من التطبيقات الأصلية على iOS وAndroid.",
+          "تعاونت ضمن فريق Agile لتنفيذ خطوط CI/CD سحابية، مما سرّع دورات النشر بنسبة 15%.",
+          "أدمجت REST APIs وخدمات Firebase الخلفية لدعم مزامنة البيانات الفورية في 3+ تطبيقات موبايل إنتاجية."
+        ]
+      },
+      {
+        "role": "مصممة UI/UX (عمل حر) | عملاء مستقلون (2024 – 2025)",
+        "bullets": [
+          "صممت واجهات ويب وموبايل متجاوبة لأكثر من 5 منتجات عملاء، مما حسّن معدلات إتمام المهام بنسبة 20%.",
+          "أنشأت wireframes ونماذج عالية الدقة، مما قلّص وقت تسليم التصميم للتطوير بنسبة 30%.",
+          "حسّنت تدفقات المستخدم ثنائية اللغة عربي/إنجليزي عبر اختبارات قابلية استخدام تكرارية في 4 إصدارات منتج."
+        ]
+      },
+      {
+        "role": "مطوّرة Flutter | Brother Creative، المملكة العربية السعودية (2024)",
+        "bullets": [
+          "طورت ونشرت 2+ تطبيق Flutter على Apple App Store وGoogle Play لعملاء تجزئة تجاريين.",
+          "صممت وحدات ميزات باستخدام BLoC وGetX لتدفق حالة متوقّع وقواعد كود Flutter قابلة للصيانة والتوسع مع الفريق.",
+          "سلّمت إصدارات إنتاجية ضمن دورات Agile مدتها 6 أسابيع بالتعاون مع فرق التصميم."
+        ]
+      },
+      {
+        "role": "مطوّرة Flutter (عمل حر) | ma7zan (2023 – 2024)",
+        "bullets": [
+          "طورت تطبيقاً متعدد المنصات للتجارة الإلكترونية والتوصيل اللوجستي باستخدام Flutter وDart، مع تحسين رحلات المستخدم الأساسية لأكثر من 500 جلسة نشطة يومياً.",
+          "صمّمت إدارة حالة مؤسسية عبر BLoC للمنطق التجاري المعقّد والمتوقّع وGetX للتوجيه السريع الخفيف وأدوات إدارة الحالة.",
+          "أدمجت أنظمة BNPL الرائدة في منطقة الشرق الأوسط وشمال أفريقيا، عبر Tamara Flutter SDK وTabi REST APIs لتقديم خيارات دفع آمنة على أقساط متعددة.",
+          "بنيت وحدة تتبع تسويق بالعمولة برمجية، تؤتمت حسابات العمولات لحظياً ودورات حياة لافتات ترويجية مخصصة.",
+          "حسّنت حمولات البيانات بين التطبيق والخلفية لتتبع التوصيل، مع مزامنة حالة موثوقة عبر BLoC وأزمنة استجابة استعلامات API أقل من 200ms خلال فترات الذروة."
+        ]
+      },
+      {
+        "role": "مطوّرة ويب | مطبعة احتراف (2023 – 2024)",
+        "bullets": [
+          "بنيت موقع WordPress/PHP كامل مع معرض أعمال وكتالوج خدمات وتدفقات تواصل يخدم 1,000+ زائر شهرياً.",
+          "خصصت قوالب وإضافات لتبسيط عروض أسعار خدمات الطباعة، مما قلّص وقت الرد على استفسارات العملاء بنسبة 40%.",
+          "نشرت صفحات محتوى ثنائية اللغة محسّنة لمحركات البحث، مما زاد الظهور العضوي بنسبة 35%."
+        ]
+      },
+      {
+        "role": "مطوّرة WordPress | متجر Nobofa (2023)",
+        "bullets": [
+          "أطلقت متجر WooCommerce مع سلة ودفع وكتالوج منتجات يدعم 200+ SKU في فئات الصحة والعافية.",
+          "أدمجت بوابات دفع آمنة وتدفقات دفع مخصصة، مما حقق زيادة 12% في المعاملات المكتملة.",
+          "هيأت التخزين المؤقت وتحسين الصور، مما حسّن سرعة تحميل الصفحة بمقدار 2.5 ثانية على الموبايل."
+        ]
+      },
+      {
+        "role": "مطوّرة Full Stack مستقلة | عملاء مستقلون (2020 – 2022)",
+        "bullets": [
+          "سلّمت 8+ مشاريع PHP Laravel خلفية مع REST APIs وقواعد MySQL لعملاء أعمال صغيرة وتجارة إلكترونية.",
+          "صممت مخططات قواعد بيانات معيارية ونقاط API تتعامل مع 10,000+ سجل بأزمنة استجابة أقل من 200ms.",
+          "أدارت تسليم المشاريع من جمع المتطلبات حتى النشر لـ 3 عملاء متزامنين."
+        ]
+      },
+      {
+        "role": "مطوّرة Flutter | Aurora للتجارة الإلكترونية (2020 – 2022)",
+        "bullets": [
+          "بنيت تطبيق تجارة إلكترونية موبايل بهندسة UI قابلة للتوسع وطبقة REST API تخدم 1,500+ مستخدم مسجّل.",
+          "نفذت إدارة الحالة عبر BLoC وGetX مع التخزين المؤقت دون اتصال، مما قلّص معدلات تعطل التطبيق بنسبة 18% على أجهزة Android.",
+          "استخدمت Jira بتوجيه من قائدة الفريق لتنظيم السبرنتات وتتبع المهام وإدارة تسليم الميزات ضمن خارطة التطوير.",
+          "تعاونت على تكاملات API للدفع والمخزون لدعم تحديثات المخزون الفورية لـ 300+ منتج."
+        ]
+      },
+      {
+        "role": "قائدة فريق IT ومطوّرة Full Stack أولى | قطاع IT حكومي (2012 – 2022)",
+        "bullets": [
+          "تدرّجت سريعاً عبر 4 أدوار تصاعدية من متدربة حديثة التخرج إلى قائدة فريق، بعد اختياري للتعيين بسبب تخرجي بمعدل أكاديمي متميز (86% في هندسة الحاسوب).",
+          "رُقيت إلى مخطّطة وقائدة فريق IT، حيث أدرت دورات حياة المشاريع من البداية للنهاية وهندسة السبرنتات وتسليم تدفقات عمل مؤسسية قابلة للتوسع.",
+          "صممت 10+ حلول ويب Full Stack باستخدام C# وPHP Laravel، مما خفّض أوقات المعالجة اليدوية بنسبة 40% عبر الإدارات الحكومية على مستوى الولاية.",
+          "صممت وحسّنت قواعد بيانات علائقية عالية التزامن باستخدام Oracle Database وPL/SQL وMySQL لمعالجة مجموعات بيانات ضخمة على مستوى الدولة.",
+          "هندست REST APIs آمنة وتكاملات طرف ثالث باستخدام Java وOracle ADF، مع تحسين مصادقة الخلفية واتصال الأنظمة.",
+          "عملت كمدرّبة ومرشدة رئيسية، حيث درّبت عناصر فريق IT المبتدئة على أفضل ممارسات هندسة البرمجيات وهندسة الكود النظيف المتقدمة وGit."
+        ]
+      }
+    ],
     "languagesTitle": "اللغات",
-    "lang1": "العربية — لغة أم / مستوى متقدم",
-    "lang2": "الإنجليزية — مستوى جيد",
-    "lang3": "الفرنسية — مبتدئ",
-    "cvSkillsTitle": "مهارات تقنية إضافية",
-    "cvSkill1": "C# وASP.NET Core — Web APIs وخدمات وتكاملات",
-    "cvSkill2": "تصميم REST API وتكاملات خارجية وأساسيات أمان Backend",
-    "cvSkill3": "MySQL وهندسة Backend قابلة للتوسع وOracle Database وPL/SQL",
-    "cvSkill4": "Git وGitHub وخطوط CI/CD  وأساسيات DevOps",
-    "cvSkill5": "WordPress وWooCommerce وتخصيصات",
-    "cvSkill6": "Flutter وDart ونشر تطبيقات الموبايل",
-    "cvSkill7": "Next.js وJavaScript/TypeScript وTailwind CSS",
-    "cvSkill8": "تعاون Agile وقيادة فريق وتسليم مناسب لبيئة Startup",
-    "cvSkill9": "تجارة إلكترونية وWooCommerce — سلة ودفع وتكاملات دفع",
-    "cvSkill10": "أساسيات AWS سحابي وFirebase وBackend لتطبيقات Flutter"
+    "lang1": "العربية — Native or Bilingual Proficiency",
+    "lang2": "الإنجليزية — Professional Working Proficiency",
+    "lang3": "الفرنسية — Elementary Proficiency",
+    "cvSkillsTitle": "المهارات التقنية",
+    "cvSkill1": "Backend: C#, ASP.NET Core, ASP.NET Web API, REST API, Laravel, PHP",
+    "cvSkill2": "قواعد البيانات: PostgreSQL, MySQL, Oracle Database, PL/SQL, SQL",
+    "cvSkill3": "Frontend: JavaScript, TypeScript, Next.js, React, HTML5, CSS3, Tailwind CSS",
+    "cvSkill4": "Mobile: Flutter, Dart, BLoC Architecture, GetX, Firebase, REST API, App Store Deployment",
+    "cvSkill5": "CMS وتجارة إلكترونية: WordPress, WooCommerce, قوالب وإضافات مخصصة",
+    "cvSkill6": "DevOps وأدوات: Git, GitHub, Docker, CI/CD, أساسيات AWS",
+    "cvSkill7": "Integrations: Tabi API, Tamara SDK, BNPL Gateways, Affiliate Marketing Modules, Third-party APIs",
+    "cvSkill8": "مؤسسات: Oracle ADF, Java, هندسة قابلة للتوسع، أنظمة حكومية",
+    "cvSkill9": "منهجيات: Agile, Scrum, قيادة فريق, حل المشكلات, عمل مستقل",
+    "cvSkill10": "أمان: أساسيات أمان Backend وأنماط مصادقة آمنة",
+    "cvSkill11": "سحابة: AWS, Firebase, نشر على السحابة",
+    "cvSkill12": "تصميم: أساسيات UI/UX وواجهات متجاوبة ثنائية اللغة"
   },
   "skills": {
+    "sectionLabel": "التقنيات",
+    "subtitle": "تقنيات مجمّعة حسب المجال — اختر فئة لاستكشاف المهارات.",
     "title": "المهارات والأدوات",
     "tabs": {
       "web": "مطوّر ويب",
@@ -104,6 +198,8 @@
       "Dart": "Dart",
       "Firebase": "Firebase",
       "State Management": "إدارة الحالة",
+      "bloc": "BLoC",
+      "getx": "GetX",
       "Responsive UI": "واجهة متجاوبة",
       "nextJs": "Next.js",
       "Tailwind CSS": "Tailwind CSS",
@@ -112,12 +208,22 @@
       "aspNetCore": "ASP.NET Core",
       "Oracle ADF": "Oracle ADF",
       "htmlCssJs": "HTML / CSS / JS",
-      "MySQL": "MySQL"
+      "MySQL": "MySQL",
+      "PostgreSQL": "PostgreSQL",
+      "Docker": "Docker",
+      "Git": "Git",
+      "GitHub": "GitHub",
+      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "cicd": "CI/CD",
+      "Java": "Java"
     }
   },
   "projects": {
+    "sectionLabel": "معرض الأعمال",
+    "subtitle": "مشاريع مختارة في التجارة الإلكترونية والوكالات والمنصات المخصصة.",
     "title": "أعمال مختارة",
-    "more": "يمكن إضافة المزيد من المشاريع ودراسات الحالة هنا أو ربطها من portfolio خارجي.",
+    "more": " ",
     "items": {
       "socialSpark": {
         "title": "Social Spark",
@@ -167,7 +273,8 @@
   },
   "cvPdf": {
     "documentSubject": "السيرة الذاتية",
-    "summaryTitle": "نبذة مهنية",
+    "summaryTitle": "الملخص المهني",
+    "locationLabel": "الموقع: سوريا (عمل عن بُعد / مفتوحة للانتقال)",
     "emailLabel": "البريد",
     "phoneLabel": "الهاتف",
     "behanceLabel": "Behance",
@@ -175,10 +282,18 @@
     "downloadTitle": "تحميل السيرة الذاتية (PDF)",
     "downloadEnglish": "الإنجليزية",
     "downloadArabic": "العربية",
-    "downloadHint": "اختر لغة ملف PDF.",
-    "buttonShort": "تحميل السيرة"
+    "downloadHint": "تحميل PDF رقمي قابل للبحث بنص مضمّن — اختر اللغة.",
+    "buttonShort": "تحميل السيرة",
+    "tailorLabel": "تخصيص السيرة لوصف الوظيفة (اختياري)",
+    "tailorHint": "الصق إعلان الوظيفة أدناه. سيتم تعديل العنوان وترتيب المهارات في PDF ليطابق المسمى والكلمات المفتاحية لتحسين توافق ATS.",
+    "tailorPlaceholder": "Senior Backend Engineer\n\nRequired: PostgreSQL, MySQL, C#, ASP.NET Core, REST APIs...",
+    "tailorPreviewTitle": "معاينة العنوان المخصص",
+    "tailorError": "تعذر إنشاء السيرة المخصصة. حاول مرة أخرى.",
+    "downloading": "جاري الإنشاء..."
   },
   "contact": {
+    "sectionLabel": "تواصل",
+    "subtitle": "متاحة لفرص Full Stack وFlutter وWordPress على مستوى Senior.",
     "title": "تواصل معي",
     "intro": "مهتم بالتعاون أو لديك مشروع ووردبريس؟ تواصل معي.",
     "email": "راسلني",
@@ -186,7 +301,7 @@
     "behance": "Behance"
   },
   "footer": {
-    "copyright": "نوار سعيد. مطوّر Full Stack.",
+    "copyright": "نوار سعيد. مطوّرة Full Stack أولى.",
     "top": "أعلى",
     "contact": "تواصل"
   }
