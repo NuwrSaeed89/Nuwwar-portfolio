@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit, JetBrains_Mono, Tajawal } from "next/font/google";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -22,9 +23,20 @@ const tajawal = Tajawal({
 });
 
 export const metadata: Metadata = {
-  title: "Nuwwar Saeed | Senior Full Stack Developer",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Nuwwar Saeed | Senior Full Stack Developer",
+    template: "%s | Nuwwar Saeed",
+  },
   description:
     "Portfolio of Nuwwar Saeed — Senior Full Stack developer with 10+ years building web, mobile, and WordPress solutions.",
+  applicationName: "Nuwwar Saeed Portfolio",
+  referrer: "origin-when-cross-origin",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
 };
 
 export default function RootLayout({

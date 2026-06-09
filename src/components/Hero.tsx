@@ -74,7 +74,7 @@ export default function Hero() {
           <div className="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-[var(--border-bright)] glass-card p-1">
             <Image
               src="/5.jpeg"
-              alt="MacBook"
+              alt="Nuwwar Saeed — Senior Full Stack Developer portfolio"
               width={900}
               height={600}
               className="w-full h-auto object-cover rounded-xl"

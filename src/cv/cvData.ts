@@ -10,11 +10,11 @@ export const CONTACT = {
   behanceUrl: "https://www.behance.net/nuwwarsaeed",
 } as const;
 
-const PORTFOLIO_ORIGIN = "https://nuwwar-portfolio.vercel.app";
+import { SITE_URL } from "@/lib/site";
 
 /** Public portfolio URL matching the CV language. */
 export function getPortfolioUrl(lang: CvLang): string {
-  return `${PORTFOLIO_ORIGIN}/${lang}`;
+  return `${SITE_URL}/${lang}`;
 }
 
 export function getCvMessages(lang: CvLang) {
