@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLocaleContext } from "@/context/LocaleContext";
 import { AnimateIn } from "./AnimateIn";
 import { SectionHeading } from "./SectionHeading";
@@ -103,23 +104,27 @@ export default function Projects() {
                     className="block aspect-video bg-[var(--border)] relative overflow-hidden"
                   >
                     {images.length === 1 ? (
-                      /* eslint-disable-next-line @next/next/no-img-element */
-                      <img
+                      <Image
                         src={images[0]}
                         alt={title}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
                       />
                     ) : (
-                      <div className="flex w-full h-full">
-                        {images.map((src, i) => (
-                          /* eslint-disable-next-line @next/next/no-img-element */
-                          <img
-                            key={src}
-                            src={src}
-                            alt=""
-                            className="w-full h-full object-cover shrink-0"
-                            style={{ minWidth: `${100 / images.length}%` }}
-                          />
+                      <div className="flex absolute inset-0 w-full h-full">
+                        {images.map((src) => (
+                          <div key={src} className="relative flex-1 min-w-0 h-full">
+                            <Image
+                              src={src}
+                              alt=""
+                              fill
+                              sizes="(max-width: 640px) 50vw, 25vw"
+                              className="object-cover"
+                              loading="lazy"
+                            />
+                          </div>
                         ))}
                       </div>
                     )}

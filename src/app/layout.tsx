@@ -16,8 +16,8 @@ const jetbrains = JetBrains_Mono({
 });
 
 const tajawal = Tajawal({
-  weight: ["400", "500", "700", "800"],
-  subsets: ["arabic", "latin"],
+  weight: ["400", "700"],
+  subsets: ["arabic"],
   variable: "--font-tajawal",
   display: "swap",
 });

@@ -29,11 +29,23 @@ body {
 
 /* Floating navbar: anchor links stay visible below header */
 main section[id] {
-  scroll-margin-top: 6.5rem;
+  scroll-margin-top: 5.5rem;
+}
+
+@media (min-width: 640px) {
+  main section[id] {
+    scroll-margin-top: 6.5rem;
+  }
 }
 
 #cv-download {
-  scroll-margin-top: 6.5rem;
+  scroll-margin-top: 5.5rem;
+}
+
+@media (min-width: 640px) {
+  #cv-download {
+    scroll-margin-top: 6.5rem;
+  }
 }
 
 @layer utilities {
@@ -308,6 +320,35 @@ main section[id] {
     animation: none;
     opacity: 1;
     transform: none;
+  }
+}
+
+/* Mobile: faster hero reveal, lighter effects */
+@media (max-width: 639px) {
+  .animate-fade-in-left,
+  .animate-fade-in-right {
+    animation-name: fade-in;
+    animation-duration: 0.35s;
+  }
+
+  .glass-card,
+  .glass-card-hover {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .card-hover:hover {
+    transform: none;
+  }
+
+  .section-block {
+    @apply py-16;
+  }
+}
+
+@media (max-width: 1023px), (hover: none) {
+  .page-glow-wrapper::before {
+    display: none;
   }
 }
 
