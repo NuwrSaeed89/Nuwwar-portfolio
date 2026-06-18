@@ -17,7 +17,7 @@ export default function Hero() {
           style={{ animationDelay: "0ms" }}
           dir={dir}
         >
-          <p className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full border border-[var(--accent)]/30 bg-[var(--accent-soft)] font-mono text-[10px] sm:text-xs text-[var(--accent)] uppercase tracking-widest mb-4 sm:mb-5">
+          <p className="inline-flex flex-wrap justify-center lg:justify-start items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full border border-[var(--accent)]/30 bg-[var(--accent-soft)] font-mono text-[10px] sm:text-xs text-[var(--accent)] uppercase tracking-wide sm:tracking-widest mb-4 sm:mb-5 max-w-full">
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse" aria-hidden />
             {t("hero.badge")}
           </p>
@@ -26,28 +26,28 @@ export default function Hero() {
             <span className="chip-tag">{t("hero.roleFlutter")}</span>
             <span className="chip-tag">{t("hero.roleWordPress")}</span>
           </div>
-          <h1 className="text-4xl xs:text-[2.75rem] sm:text-6xl md:text-7xl font-bold tracking-tight mb-4 sm:mb-6 leading-tight">
+          <h1 className="text-3xl xs:text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-4 sm:mb-6 leading-tight break-words">
             <span className="gradient-text inline-block">{t("site.name")}</span>
           </h1>
           <p className="text-base sm:text-xl text-[var(--muted)] max-w-2xl mx-auto lg:mx-0 mb-8 sm:mb-10 leading-relaxed">
             {t("hero.tagline")}
           </p>
-          <div className="flex flex-col xs:flex-row flex-wrap gap-3 sm:gap-4 justify-center lg:justify-start">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center lg:justify-start w-full">
             <a
               href="#projects"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[var(--accent)] text-white font-medium hover:opacity-90 transition-opacity w-full xs:w-auto"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[var(--accent)] text-white font-medium hover:opacity-90 transition-opacity w-full sm:w-auto"
             >
               {t("hero.viewWork")}
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-[var(--border)] text-[var(--text)] font-medium hover:bg-[var(--surface)] transition-colors w-full xs:w-auto"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-[var(--border)] text-[var(--text)] font-medium hover:bg-[var(--surface)] transition-colors w-full sm:w-auto"
             >
               {t("hero.getInTouch")}
             </a>
             <a
               href="#cv-download"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border border-[var(--border)] text-[var(--text)] font-medium hover:bg-[var(--surface)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors w-full xs:w-auto"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border border-[var(--border)] text-[var(--text)] font-medium hover:bg-[var(--surface)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors w-full sm:w-auto"
             >
               <svg className="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path

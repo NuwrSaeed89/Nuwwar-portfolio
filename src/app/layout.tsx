@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Outfit, JetBrains_Mono, Tajawal } from "next/font/google";
 import { SITE_URL } from "@/lib/site";
 import "./globals.css";
@@ -37,6 +37,12 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({

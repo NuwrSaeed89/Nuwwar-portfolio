@@ -30,15 +30,17 @@ export default function LocaleLayout({
   if (!isValidLocale(locale)) notFound();
 
   return (
-    <LocaleProvider locale={locale as Locale}>
+    <>
       <JsonLd locale={locale as Locale} />
-      <div
-        dir={locale === "ar" ? "rtl" : "ltr"}
-        lang={locale}
-        className={`min-h-screen ${locale === "ar" ? "font-arabic" : ""}`}
-      >
-        {children}
-      </div>
-    </LocaleProvider>
+      <LocaleProvider locale={locale as Locale}>
+        <div
+          dir={locale === "ar" ? "rtl" : "ltr"}
+          lang={locale}
+          className={`min-h-screen ${locale === "ar" ? "font-arabic" : ""}`}
+        >
+          {children}
+        </div>
+      </LocaleProvider>
+    </>
   );
 }

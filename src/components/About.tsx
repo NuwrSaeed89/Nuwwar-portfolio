@@ -23,7 +23,7 @@ export default function About() {
             <p className="text-base text-[var(--muted)] leading-relaxed">{t("about.p3")}</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-4 sm:gap-5">
+          <div className="grid grid-cols-1 min-[480px]:grid-cols-3 lg:grid-cols-1 gap-3 sm:gap-5">
             <div className="stat-pill">
               <span className="stat-value">{t("about.stats.years")}</span>
               <span className="stat-label">{t("about.stats.yearsLabel")}</span>
@@ -32,7 +32,7 @@ export default function About() {
               <span className="stat-value gradient-text">{t("about.stats.level")}</span>
               <span className="stat-label">{t("about.stats.levelLabel")}</span>
             </div>
-            <div className="stat-pill sm:col-span-3 lg:col-span-1">
+            <div className="stat-pill min-[480px]:col-span-3 lg:col-span-1">
               <span className="stat-value">{t("about.stats.focus")}</span>
               <span className="stat-label">{t("about.stats.focusLabel")}</span>
             </div>

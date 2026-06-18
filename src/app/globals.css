@@ -20,11 +20,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   background: var(--bg);
   color: var(--text);
+  overflow-x: clip;
 }
 
 /* Floating navbar: anchor links stay visible below header */
@@ -80,11 +82,11 @@ main section[id] {
 
 /* Layout */
 .section-shell {
-  @apply max-w-6xl mx-auto px-5 sm:px-6;
+  @apply max-w-6xl mx-auto px-4 sm:px-6;
 }
 
 .section-block {
-  @apply relative py-20 sm:py-28 overflow-hidden;
+  @apply relative py-14 sm:py-20 md:py-28 overflow-hidden;
 }
 
 .section-block-alt {
@@ -202,18 +204,18 @@ main section[id] {
 }
 
 .chip-tag {
-  @apply inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium border;
+  @apply inline-flex items-center px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-medium border max-w-full text-center;
   border-color: var(--border);
   color: var(--muted);
   background: color-mix(in srgb, var(--bg) 60%, transparent);
 }
 
 .contact-card {
-  @apply glass-card-hover flex flex-col items-center gap-4 p-6 sm:p-8 text-center min-w-[10rem] flex-1;
+  @apply glass-card-hover flex flex-col items-center gap-4 p-5 sm:p-8 text-center w-full sm:min-w-[10rem] sm:flex-1;
 }
 
 .tab-pill {
-  @apply px-4 py-2.5 rounded-full border text-sm font-medium transition-all duration-200;
+  @apply px-3 sm:px-4 py-2.5 rounded-xl sm:rounded-full border text-xs sm:text-sm font-medium transition-all duration-200 w-full sm:w-auto text-center;
 }
 .tab-pill-active {
   @apply bg-[var(--accent)] text-white border-[var(--accent)] shadow-lg;
@@ -341,8 +343,20 @@ main section[id] {
     transform: none;
   }
 
-  .section-block {
-    @apply py-16;
+  .section-label {
+    @apply text-[10px] tracking-[0.14em];
+  }
+
+  .experience-item {
+    @apply ps-7;
+  }
+
+  .experience-timeline::before {
+    inset-inline-start: 0.3rem;
+  }
+
+  .bullet-list li {
+    @apply text-sm;
   }
 }
 

@@ -225,6 +225,20 @@
     "title": "Selected work",
     "more": " ",
     "items": {
+      "nordPort": {
+        "title": "NORD PORT — نورد بورت",
+        "description": "Designed and developed a bilingual (Arabic/English) business website for Nord Port, a logistics company operating between China and Sweden. The site includes services, products, partnerships, contact forms, and WhatsApp-based order requests. Built a full admin panel for managing catalog, site settings, and contact submissions, connected to a MySQL database and deployed on Hostinger.",
+        "highlights": [
+          "Bilingual corporate website (RTL/LTR) for a logistics & import brokerage",
+          "Pages: Home, Services, Products, Order, Partnerships, About, Contact",
+          "WhatsApp order requests with pre-filled messages from the order form",
+          "Admin dashboard: products, categories, regions, site settings, contact messages",
+          "Product image uploads and catalog management from the admin panel",
+          "MySQL database + Next.js API Routes",
+          "Deployed on Hostinger (Node.js Web App)",
+          "Responsive design with modern UI and scroll reveal animations"
+        ]
+      },
       "socialSpark": {
         "title": "Social Spark",
         "description": "Creative agency website (Arabic/English) built with ASP.NET — premium landing page, sector showcases, consultation booking, and bilingual UX. Live at socialsparkcompany.com."

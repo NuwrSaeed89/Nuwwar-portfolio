@@ -65,7 +65,7 @@ export default function Skills() {
           subtitle={t("skills.subtitle")}
         />
 
-        <div className="flex flex-wrap gap-2 mb-8 p-1.5 rounded-full border border-[var(--border)] bg-[var(--surface)]/60 w-fit max-w-full">
+        <div className="grid grid-cols-1 xs:grid-cols-3 gap-2 sm:flex sm:flex-wrap mb-8 p-1.5 rounded-2xl sm:rounded-full border border-[var(--border)] bg-[var(--surface)]/60 w-full max-w-full">
           {(["web", "flutter", "wordpress"] as TabKey[]).map((tab) => (
             <button
               key={tab}

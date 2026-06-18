@@ -2,11 +2,16 @@
 
 import Image from "next/image";
 import { useLocaleContext } from "@/context/LocaleContext";
+import en from "@/messages/en.json";
+import ar from "@/messages/ar.json";
 import { AnimateIn } from "./AnimateIn";
 import { SectionHeading } from "./SectionHeading";
 
+const MESSAGES = { en, ar } as const;
+
 type ProjectItem = {
   id:
+    | "nordPort"
     | "socialSpark"
     | "indoOud"
     | "ehtiraf"
@@ -23,6 +28,11 @@ type ProjectItem = {
 } & ({ image?: string; images?: never } | { image?: never; images: string[] });
 
 const projectList: ProjectItem[] = [
+  {
+    id: "nordPort",
+    tags: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS", "MySQL", "Node.js", "Hostinger"],
+    images: ["/assets/n1.png"],
+  },
   {
     id: "socialSpark",
     tags: ["ASP.NET Core", "C#", "REST API"],
@@ -76,7 +86,7 @@ const projectList: ProjectItem[] = [
 ];
 
 export default function Projects() {
-  const { t } = useLocaleContext();
+  const { t, locale } = useLocaleContext();
 
   return (
     <section id="projects" className="section-block border-t border-[var(--border)]/60">
@@ -90,6 +100,11 @@ export default function Projects() {
           {projectList.map((project, index) => {
             const title = t(`projects.items.${project.id}.title`);
             const description = t(`projects.items.${project.id}.description`);
+            const item = MESSAGES[locale].projects.items[project.id];
+            const highlights =
+              item && "highlights" in item && Array.isArray(item.highlights)
+                ? item.highlights
+                : [];
             const images = "images" in project && project.images ? project.images : "image" in project && project.image ? [project.image] : [];
             return (
               <article
@@ -130,12 +145,12 @@ export default function Projects() {
                     )}
                   </a>
                 ) : null}
-                <div className="p-6">
-                  <div className="flex items-center gap-3 mb-2">
-                    <span className="inline-flex h-7 px-2 rounded-full border border-[var(--border)] text-xs font-mono text-[var(--muted)] bg-[var(--bg)]/60">
+                <div className="p-4 sm:p-6">
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-2">
+                    <span className="inline-flex h-7 w-fit px-2 rounded-full border border-[var(--border)] text-xs font-mono text-[var(--muted)] bg-[var(--bg)]/60 shrink-0">
                       {String(index + 1).padStart(2, "0")}
                     </span>
-                  <h3 className="text-lg font-semibold text-white">
+                  <h3 className="text-base sm:text-lg font-semibold text-white break-words min-w-0">
                     {project.url ? (
                       <a
                         href={project.url}
@@ -153,6 +168,13 @@ export default function Projects() {
                   <p className="text-[var(--muted)] text-sm leading-relaxed mb-4">
                     {description}
                   </p>
+                  {highlights.length > 0 ? (
+                    <ul className="bullet-list space-y-1.5 sm:space-y-2 mb-4 text-xs sm:text-sm">
+                      {highlights.map((point) => (
+                        <li key={point}>{point}</li>
+                      ))}
+                    </ul>
+                  ) : null}
                   <ul className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
                       <li

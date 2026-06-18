@@ -63,7 +63,7 @@ export default function Resume() {
           />
           <div className="glass-card p-4 sm:p-5 shrink-0 w-full lg:max-w-sm">
             <p className="text-sm text-[var(--muted)] mb-3">{t("cvPdf.downloadHint")}</p>
-            <CvDownloadButtons compact className="justify-start" />
+            <CvDownloadButtons compact className="justify-stretch sm:justify-start" />
           </div>
         </div>
 
@@ -94,11 +94,11 @@ export default function Resume() {
           <div className="experience-timeline">
             {experiences.map((entry) => (
               <article key={entry.role} className="experience-item">
-                <div className="glass-card p-5 sm:p-6">
-                  <h4 className="text-base sm:text-lg font-semibold text-white leading-snug mb-3">
+                <div className="glass-card p-4 sm:p-5 md:p-6">
+                  <h4 className="text-sm sm:text-base md:text-lg font-semibold text-white leading-snug mb-3 break-words">
                     {entry.role}
                   </h4>
-                  <ul className="bullet-list space-y-2.5 text-sm sm:text-base">
+                  <ul className="bullet-list space-y-2 sm:space-y-2.5 text-sm sm:text-base">
                     {entry.bullets.map((bullet) => (
                       <li key={bullet}>{bullet}</li>
                     ))}

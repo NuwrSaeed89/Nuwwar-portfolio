@@ -60,8 +60,8 @@ export function CvDownloadButtons({
   const [error, setError] = useState<string | null>(null);
 
   const btnClass = compact
-    ? "inline-flex items-center gap-1.5 px-3 py-2 text-sm rounded-lg bg-[var(--surface)] border border-[var(--border)] text-[var(--text)] font-medium hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors disabled:opacity-60"
-    : "inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[var(--surface)] border border-[var(--border)] text-[var(--text)] font-medium hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors disabled:opacity-60";
+    ? "inline-flex items-center justify-center gap-1.5 px-3 py-2.5 text-sm rounded-lg bg-[var(--surface)] border border-[var(--border)] text-[var(--text)] font-medium hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors disabled:opacity-60 w-full sm:w-auto"
+    : "inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-[var(--surface)] border border-[var(--border)] text-[var(--text)] font-medium hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors disabled:opacity-60 w-full sm:w-auto";
 
   const trimmedJd = jobDescription.trim();
   const useTailoring = trimmedJd.length > 0;
@@ -84,7 +84,7 @@ export function CvDownloadButtons({
 
   return (
     <div className={`flex flex-col gap-2 ${className}`.trim()}>
-      <div className="flex flex-wrap gap-3 justify-center">
+      <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-3 justify-center w-full">
         {(["en", "ar"] as const).map((lang) => (
           <button
             key={lang}
