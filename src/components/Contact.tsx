@@ -46,6 +46,20 @@ const contactLinks = [
       />
     ),
   },
+  {
+    key: "contact.location",
+    href: "https://maps.google.com/?q=Damascus,+Syria",
+    accent: false,
+    external: true,
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"
+      />
+    ),
+  },
 ] as const;
 
 export default function Contact() {
