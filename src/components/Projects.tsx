@@ -20,6 +20,7 @@ type ProjectItem = {
     | "rentCarsHouses"
     | "nobofa"
     | "northafrica"
+    | "ma7zn"
     | "customTheme"
     | "wooStore"
     | "pluginDev";
@@ -81,6 +82,11 @@ const projectList: ProjectItem[] = [
     tags: ["WooCommerce", "WordPress", "PHP", "Blog"],
     url: undefined,
   },
+  {
+    id: "ma7zn",
+    tags: ["Flutter", "Django", "PostgreSQL", "REST API", "E‑commerce"],
+    url: undefined,
+  },
 
  
 
@@ -101,10 +107,14 @@ export default function Projects() {
           {projectList.map((project, index) => {
             const title = t(`projects.items.${project.id}.title`);
             const description = t(`projects.items.${project.id}.description`);
-            const item = MESSAGES[locale].projects.items[project.id];
+            const itemsById = MESSAGES[locale].projects.items as Record<string, unknown>;
+            const item = itemsById[project.id];
             const highlights =
-              item && "highlights" in item && Array.isArray(item.highlights)
-                ? item.highlights
+              typeof item === "object" &&
+              item !== null &&
+              "highlights" in item &&
+              Array.isArray((item as any).highlights)
+                ? ((item as any).highlights as string[])
                 : [];
             const images = "images" in project && project.images ? project.images : "image" in project && project.image ? [project.image] : [];
             return (
@@ -171,7 +181,7 @@ export default function Projects() {
                   </p>
                   {highlights.length > 0 ? (
                     <ul className="bullet-list space-y-1.5 sm:space-y-2 mb-4 text-xs sm:text-sm">
-                      {highlights.map((point) => (
+                      {highlights.map((point: string) => (
                         <li key={point}>{point}</li>
                       ))}
                     </ul>

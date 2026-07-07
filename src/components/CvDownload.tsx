@@ -85,18 +85,15 @@ export function CvDownloadButtons({
   return (
     <div className={`flex flex-col gap-2 ${className}`.trim()}>
       <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-3 justify-center w-full">
-        {(["en", "ar"] as const).map((lang) => (
-          <button
-            key={lang}
-            type="button"
-            onClick={() => handleDownload(lang)}
-            disabled={downloading !== null}
-            className={btnClass}
-          >
-            {downloadIcon}
-            {downloading === lang ? t("cvPdf.downloading") : t(`cvPdf.download${lang === "en" ? "English" : "Arabic"}`)}
-          </button>
-        ))}
+        <button
+          type="button"
+          onClick={() => handleDownload("en")}
+          disabled={downloading !== null}
+          className={btnClass}
+        >
+          {downloadIcon}
+          {downloading === "en" ? t("cvPdf.downloading") : t("cvPdf.downloadEnglish")}
+        </button>
       </div>
       {error ? <p className="text-sm text-red-400 text-center">{error}</p> : null}
     </div>

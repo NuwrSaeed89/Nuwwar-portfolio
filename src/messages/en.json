@@ -63,11 +63,21 @@
     "course7": "C# & ASP.NET Core — REST APIs, authentication, integrations (self-study & projects)",
     "experiences": [
       {
-        "role": "Flutter Developer | Iwinto, Dubai (2025 – 2026)",
+        "role": "Full Stack Developer | Nord Port (01/2026 – 06/2026)",
         "bullets": [
-          "Designed and deployed cross-platform mobile storefronts using Flutter, Dart, and BLoC, ensuring clean separation of concerns, reactive state management, and native-level performance across iOS and Android.",
-          "Collaborated within an Agile team to implement CI/CD cloud workflows, accelerating deployment cycles by 15%.",
-          "Integrated REST APIs and Firebase backend services, supporting real-time data sync for 3+ production mobile applications."
+          "Built a high-performance logistics and order tracking platform using Next.js and Django REST Framework.",
+          "Engineered robust relational PostgreSQL schemas using JSONB for dynamic payload handling and flexible tracking events.",
+          "Offloaded heavy tasks (PDF generation, email notifications) to Celery background workers for reliable asynchronous processing.",
+          "Developed a high-speed microservice using FastAPI to support scalable integrations."
+        ]
+      },
+      {
+        "role": "Flutter Developer | Iwinto, Dubai (10/2024 – 08/2025)",
+        "bullets": [
+          "Developed a multi-vendor e-commerce storefront and shipped it to Google Play and Apple App Store using Flutter and Dart with scalable BLoC state management.",
+          "Built the full backend and data management system using Django and Django REST Framework, delivering secure REST APIs for authentication, inventory, orders, and payments.",
+          "Designed a robust relational PostgreSQL schema to accurately manage user accounts, inventory, and payment workflows with strong data integrity constraints.",
+          "Implemented Celery background workers to offload heavy tasks such as push notification scheduling and order status updates, improving responsiveness and UX."
         ]
       },
       {
@@ -87,7 +97,7 @@
         ]
       },
       {
-        "role": "Flutter Developer (Freelance) | ma7zan (2023 – 2024)",
+        "role": "Flutter Developer | ma7zan (01/2023 – 09/2023)",
         "bullets": [
           "Developed a scalable cross-platform e-commerce and logistics delivery application using Flutter and Dart, optimizing core user journeys across 500+ daily active sessions.",
           "Architected enterprise state management by implementing BLoC for complex, predictable business logic and GetX for rapid, lightweight routing and state utilities.",
@@ -121,7 +131,7 @@
         ]
       },
       {
-        "role": "Flutter Developer | Aurora E-commerce (2020 – 2022)",
+        "role": "Flutter Developer | Aurora LLC (08/2022 – 12/2022)",
         "bullets": [
           "Built a mobile commerce application with scalable UI architecture and REST API layer serving 1,500+ registered users.",
           "Implemented BLoC and GetX state management with offline caching, reducing app crash rates by 18% across Android devices.",
@@ -130,7 +140,7 @@
         ]
       },
       {
-        "role": "IT Team Lead & Senior Full Stack Developer | Government IT Sector (2012 – 2022)",
+        "role": "Developer & Team Lead | Government Company (09/2012 – 01/2021)",
         "bullets": [
           "Fast-tracked through 4 progressive roles from Graduate Trainee to Team Lead, initially selected due to graduating with an elite academic score (86% grade in Computer Engineering).",
           "Promoted to IT Team Planner & Leader, managing end-to-end project lifecycles, sprint architectures, and delivering highly scalable enterprise workflows.",
@@ -276,6 +286,15 @@
       "rentCarsHouses": {
         "title": "Rent Cars & Houses",
         "description": "Rental platform for cars and houses with WooCommerce. Browse catalog, view detailed specifications and parameters for each vehicle and property, with search and booking options."
+      },
+      "ma7zn": {
+        "title": "Ma7zn (Makhzan)",
+        "description": "Mobile e-commerce application with a robust backend, connecting the app to inventory, orders, and payments through secure APIs.",
+        "highlights": [
+          "Developed the “Ma7zn” e-commerce application using Flutter.",
+          "Built the backend and database layer using Django and PostgreSQL.",
+          "Designed secure APIs to connect app services smoothly and safely."
+        ]
       },
       "pluginDev": {
         "title": "Plugin development",

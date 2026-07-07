@@ -210,14 +210,6 @@ export function CvDocument({
           <Text style={pStyle}>{m.about.p3}</Text>
         </Section>
 
-        <Section title={r.technicalSkillsTitle} lang={lang}>
-          {skillItems.map((line, i) => (
-            <Text key={i} style={bulletStyle}>
-              {BULLET} {line}
-            </Text>
-          ))}
-        </Section>
-
         <Section title={r.experienceTitle} lang={lang}>
           {r.experiences.map((entry) => (
             <View key={entry.role} style={styles.expBlock}>
@@ -236,6 +228,14 @@ export function CvDocument({
                 </Text>
               ))}
             </View>
+          ))}
+        </Section>
+
+        <Section title={r.technicalSkillsTitle} lang={lang}>
+          {skillItems.map((line, i) => (
+            <Text key={i} style={bulletStyle}>
+              {BULLET} {line}
+            </Text>
           ))}
         </Section>
 
