@@ -146,7 +146,7 @@
     "lang2": "English — Professional Working Proficiency",
     "lang3": "French — Elementary Proficiency",
     "cvSkillsTitle": "Technical Skills",
-    "cvSkill1": "Backend: C#, ASP.NET Core, ASP.NET Web API, REST API, Laravel, PHP",
+    "cvSkill1": "Backend: C#, ASP.NET Core, ASP.NET Web API, REST API, Laravel, PHP, Python, Django",
     "cvSkill2": "Databases: PostgreSQL, MySQL, Oracle Database, PL/SQL, SQL query optimization",
     "cvSkill3": "Frontend: JavaScript, TypeScript, Next.js, React, HTML5, CSS3, Tailwind CSS",
     "cvSkill4": "Mobile: Flutter, Dart, BLoC Architecture, GetX, Firebase, REST API, App Store Deployment",
@@ -204,6 +204,8 @@
       "nextJs": "Next.js",
       "Tailwind CSS": "Tailwind CSS",
       "Laravel": "Laravel",
+      "python": "Python",
+      "django": "Django",
       "csharp": "C#",
       "aspNetCore": "ASP.NET Core",
       "Oracle ADF": "Oracle ADF",
@@ -227,16 +229,12 @@
     "items": {
       "nordPort": {
         "title": "NORD PORT — نورد بورت",
-        "description": "Designed and developed a bilingual (Arabic/English) business website for Nord Port, a logistics company operating between China and Sweden. The site includes services, products, partnerships, contact forms, and WhatsApp-based order requests. Built a full admin panel for managing catalog, site settings, and contact submissions, connected to a MySQL database and deployed on Hostinger.",
+        "description": "Developed a logistics and order tracking platform for Nord Port.",
         "highlights": [
-          "Bilingual corporate website (RTL/LTR) for a logistics & import brokerage",
-          "Pages: Home, Services, Products, Order, Partnerships, About, Contact",
-          "WhatsApp order requests with pre-filled messages from the order form",
-          "Admin dashboard: products, categories, regions, site settings, contact messages",
-          "Product image uploads and catalog management from the admin panel",
-          "MySQL database + Next.js API Routes",
-          "Deployed on Hostinger (Node.js Web App)",
-          "Responsive design with modern UI and scroll reveal animations"
+          "Built a high-performance full-stack tracking platform using Next.js and Django REST Framework",
+          "Engineered robust relational schemas in PostgreSQL with JSONB fields for dynamic payload handling",
+          "Offloaded PDF generation and email notifications to background workers using Celery",
+          "Developed a high-speed microservice using FastAPI"
         ]
       },
       "socialSpark": {

@@ -18,6 +18,8 @@ const tabSkillMap: Record<TabKey, SkillItem[]> = {
     { nameKey: "aspNetCore", categoryKey: "Backend" },
     { nameKey: "PHP", categoryKey: "Backend" },
     { nameKey: "Laravel", categoryKey: "Backend" },
+    { nameKey: "python", categoryKey: "Backend" },
+    { nameKey: "django", categoryKey: "Backend" },
     { nameKey: "Java", categoryKey: "Backend" },
     { nameKey: "REST API", categoryKey: "API" },
     { nameKey: "PostgreSQL", categoryKey: "Database" },

@@ -30,7 +30,7 @@ type ProjectItem = {
 const projectList: ProjectItem[] = [
   {
     id: "nordPort",
-    tags: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS", "MySQL", "Node.js", "Hostinger"],
+    tags: ["Next.js", "Django REST", "PostgreSQL", "Celery", "FastAPI", "JSONB"],
     url: "https://nordport.company",
     images: ["/assets/n1.png"],
   },
